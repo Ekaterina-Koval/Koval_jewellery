@@ -1,0 +1,18 @@
+@mixin poppins-font {
+  font-family: "Poppins", "Arial", "Helvetica" sans-serif;
+}
+
+@mixin cormorantgaramond-font {
+  font-family: "Cormorant Garamond", "Garamond" , "Times New Roman", serif;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
