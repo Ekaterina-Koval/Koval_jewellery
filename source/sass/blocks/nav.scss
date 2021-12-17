@@ -1,0 +1,15 @@
+.nav {
+  padding: 20px 0;
+}
+
+.nav ul {
+  @include reset-list;
+  @include display-flex-wrap;
+  justify-content: center;
+}
+
+.nav li {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
