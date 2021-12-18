@@ -1,0 +1,15 @@
+.page-header {
+  @media (max-width: $medium-width) {
+
+  &--nonav {
+    background-color: transparent;
+  }
+
+  &--nav {
+    background-color: $accent-main;
+  }
+    .nojs {
+      background-color: $accent-main;
+    }
+  }
+}

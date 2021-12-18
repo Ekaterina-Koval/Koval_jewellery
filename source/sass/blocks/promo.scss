@@ -45,4 +45,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include cormorantgaramond-font;
+  color: $basic-white;
+
+  & h2 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  & P {
+    margin: 0;
+    font-weight: 400;
+    font-size: 38px;
+    font-style: italic;
+    line-height: 1.3em;
+  }
 }

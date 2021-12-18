@@ -1,3 +1,13 @@
 .search input {
+  width: inherit;
+  background-color: rgba($basic-white, 0.15);
   border: none;
+  border-radius: 21px;
+}
+
+@media (max-width: $medium-width) {
+ .search {
+    order: 1;
+    width: 100%;
+ }
 }

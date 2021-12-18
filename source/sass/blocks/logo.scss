@@ -1,0 +1,21 @@
+.logo svg {
+  fill: $accent-main;
+}
+
+@media (max-width: $medium-width) {
+  .logo {
+    &--nonav svg {
+      fill: $accent-main;
+    }
+
+    &--nav svg {
+      fill: $basic-white;
+    }
+  }
+
+  .nojs .logo {
+    svg {
+      fill: $basic-white;
+    }
+  }
+}

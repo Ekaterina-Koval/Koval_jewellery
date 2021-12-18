@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   @include display-flex-wrap;
   justify-content: space-between;
   align-items: center;
@@ -7,5 +9,5 @@
 }
 
 .header__logo {
-  margin-top: 30px;
+  margin: 30px auto 0;
 }

@@ -8,3 +8,38 @@
     margin-right: 35px;
   }
 }
+
+.user svg {
+  display: none;
+}
+
+@media (max-width: $medium-width) {
+  .user {
+    ul {
+      display: none;
+    }
+
+    svg {
+      position: absolute;
+      right: 0;
+      display: block;
+    }
+
+    &--nonav svg {
+      fill: $basic-content-dark;
+      stroke: $basic-content-dark;
+    }
+
+    &--nav svg {
+      fill: $basic-white;
+      stroke: $basic-white;
+    }
+  }
+
+  .nojs .user {
+     svg {
+      fill: $basic-white;
+      stroke: $basic-white;
+    }
+  }
+}
