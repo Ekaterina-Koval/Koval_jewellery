@@ -1,15 +1,28 @@
 .page-header {
+  position: relative;
   @media (max-width: $medium-width) {
+    min-height: 126px;
 
-  &--nonav {
-    background-color: transparent;
-  }
+    &--nonav {
+      background-color: transparent;
+      color: $basic-content-dark;
 
-  &--nav {
-    background-color: $accent-main;
-  }
-    .nojs {
+      & .search {
+        display: none;
+      }
+    }
+
+    &--nav {
+      height: 100vh;
+      overflow-y: auto;
       background-color: $accent-main;
+      color: $basic-white;
+    }
+
+    .nojs & {
+      height: min-content;
+      background-color: $accent-main;
+      color: $basic-white;
     }
   }
 }

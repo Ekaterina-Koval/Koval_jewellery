@@ -9,7 +9,12 @@
   }
 }
 
-.user svg {
+.user a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.user__icon-login {
   display: none;
 }
 
@@ -19,27 +24,10 @@
       display: none;
     }
 
-    svg {
+    &__icon-login {
       position: absolute;
-      right: 0;
+      right: 45px;
       display: block;
-    }
-
-    &--nonav svg {
-      fill: $basic-content-dark;
-      stroke: $basic-content-dark;
-    }
-
-    &--nav svg {
-      fill: $basic-white;
-      stroke: $basic-white;
-    }
-  }
-
-  .nojs .user {
-     svg {
-      fill: $basic-white;
-      stroke: $basic-white;
     }
   }
 }

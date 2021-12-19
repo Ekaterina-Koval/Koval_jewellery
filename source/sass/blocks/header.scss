@@ -5,7 +5,11 @@
   justify-content: space-between;
   align-items: center;
   min-height: 96px;
-  padding-bottom: 17px;
+  margin-bottom: 17px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 0;
+  }
 }
 
 .header__logo {

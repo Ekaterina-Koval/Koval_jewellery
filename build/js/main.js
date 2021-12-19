@@ -6,11 +6,10 @@ const navMain = body.querySelector('.nav');
 const navToggle = body.querySelector('.nav__toggle');
 const navLinks = body.querySelectorAll('.nav a');
 const logo = body.querySelector('.logo');
-const user = body.querySelector('.user');
+// const user = body.querySelector('.user');
 
 body.classList.remove('nojs');
 navMain.classList.add('nav--opened');
-user.classList.add('user--nonav');
 logo.classList.add('logo--nonav');
 header.classList.add('page-header--nonav');
 
@@ -23,14 +22,7 @@ const navSvitches = () => {
     header.classList.add('page-header--nonav');
     logo.classList.remove('logo--nav');
     logo.classList.add('logo--nonav');
-    user.classList.remove('user--nav');
-    user.classList.add('user--nonav');
-
-    /*
-    pageMain.classList.remove('not-available');
-    pageFooter.classList.remove('not-available');
-    headerMain.classList.remove('not-available');
-    */
+    body.classList.remove('not-available');
   } else {
     navMain.classList.add('nav--closed');
     navMain.classList.remove('nav--opened');
@@ -38,13 +30,7 @@ const navSvitches = () => {
     header.classList.remove('page-header--nonav');
     logo.classList.add('logo--nav');
     logo.classList.remove('logo--nonav');
-    user.classList.add('user--nav');
-    user.classList.remove('user--nonav');
-    /*
-    pageMain.classList.add('not-available');
-    pageFooter.classList.add('not-available');
-    headerMain.classList.add('not-available');
-    */
+    body.classList.add('not-available');
   }
 };
 
