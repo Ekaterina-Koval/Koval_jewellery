@@ -1,0 +1,17 @@
+.footer {
+  background-color: $basic-black;
+  color: $basic-white;
+}
+
+.footer__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 43% 32% 10%;
+  gap: 7.5%;
+
+  @media (max-width: $medium-width) {
+    @include display-flex-wrap;
+    padding-right: 15.5%;
+  }
+}

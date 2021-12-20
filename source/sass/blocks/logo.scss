@@ -1,5 +1,17 @@
+.logo {
+  cursor: pointer;
+}
+
 .logo svg {
   fill: $accent-main;
+
+  &:hover {
+    fill: $accent-bg-opacity07;
+  }
+
+  &:active {
+    fill: $accent-bg;
+  }
 }
 
 @media (max-width: $medium-width) {

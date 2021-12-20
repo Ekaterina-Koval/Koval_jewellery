@@ -1,0 +1,25 @@
+.social ul {
+  @include reset-list;
+}
+
+.social li {
+  @include display-flex-wrap;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.social a {
+  @include display-flex-wrap;
+  vertical-align: middle;
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social svg {
+  width: 15px;
+  align-self: center;
+  margin-right: 15px;
+}

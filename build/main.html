@@ -24,15 +24,15 @@
       CH jewellery
     </h1>
     <div class="page-header__header container header">
-      <div class="header__search search">
+      <form class="header__search search">
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
           <use xlink:href="img/sprite_auto.svg#icon_search"></use>
         </svg>
         <label class="visually-hidden" for="search">
           Type here to search
         </label>
-        <input type="search" placeholder="Type here to search" id="search">
-      </div>
+        <input type="search" placeholder="Type here to search" id="search" name="q">
+      </form>
       <div class="header__logo logo">
         <a class="logo__link" aria-label="Logotype CH jewellery. Go to main page">
           <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,120 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer footer">
+    <div class="footer__wrapper container">
+      <section class="subscription">
+        <h2>The good stuff in your inbox</h2>
+        <form class="subscription__form form" action="#" method="post">
+          <fieldset>
+            <legend>
+              News and updates from CH. No spam, we promise.
+            </legend>
+            <input type="email" name="email" placeholder="Your E-mail" required="">
+            <button type="submit">
+              <span>
+                Sign Up
+              </span>
+              <svg width="30" height="11" viewBox="0 0 30 11" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                <use xlink:href="img/sprite_auto.svg#icon_arrow-footer"></use>
+              </svg>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="footer__nav nav-footer">
+        <nav>
+          <ul>
+            <li>
+              <a href="#" alt="Go to Ordering & Payment">
+                Ordering & Payment
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="Go to Terms & Conditions">
+                Terms & Conditions
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="Go to Returns & Exchanges">
+                Returns & Exchanges
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="Go to Delivery">
+                Delivery
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="Go to About CH">
+                About CH
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="Go to Stores & Hours">
+                Stores & Hours
+              </a>
+            </li>
+            <a href="#" alt="Go to Jobs">
+              Jobs
+            </a>
+            
+            <li>
+              <a href="#" alt="Go to log in page">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <div class="footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul>
+            <li>
+              <a class="social__link" href="#">
+                <svg width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_facebook"></use>
+                </svg>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_instagram"></use>
+                </svg>
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_pinterest"></use>
+                </svg>
+                <span>
+                  Pinterest
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_twitter"></use>
+                </svg>
+                <span>
+                  Twitter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

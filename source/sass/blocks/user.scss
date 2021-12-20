@@ -28,6 +28,18 @@
       position: absolute;
       right: 45px;
       display: block;
+
+    & svg {
+      &:hover {
+        fill: $accent-bg-opacity07;
+        stroke: $accent-bg-opacity07;
+      }
+
+      &:active {
+        fill: $accent-bg-opacity07;
+        stroke: $accent-bg;
+      }
+    }
     }
   }
 }

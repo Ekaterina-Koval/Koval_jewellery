@@ -1,0 +1,71 @@
+.subscription {
+  @media (max-width: $medium-width) {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+.subscription h2 {
+  margin: 0 0 25px;
+
+  @include cormorantgaramond-font;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.3em;
+  letter-spacing: 3%;
+}
+
+.subscription fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 15px;
+  @include display-flex-wrap;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid $basic-white;
+  color: $basic-content-light;
+}
+
+.subscription legend {
+  margin: 0 0 52px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.subscription input {
+  flex-grow: 1;
+  outline: none;
+  background-color: transparent;
+  border: none;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px $basic-white;
+  }
+
+  &:focus {
+    border: 1px solid $basic-white;
+    color: $basic-white;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.subscription span {
+  margin-right: 12px;
+}
+
+.subscription button {
+  min-width: 62px;
+  font-size: 16px;
+  line-height: 21px;
+  border: none;
+  background-color: transparent;
+  color: $basic-white;
+}

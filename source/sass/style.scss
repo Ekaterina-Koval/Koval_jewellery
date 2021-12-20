@@ -5,10 +5,14 @@
 @import "global/global.scss";
 
 //blocks
+@import "blocks/footer.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/nav.scss";
+@import "blocks/nav-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/promo.scss";
 @import "blocks/search.scss";
+@import "blocks/subscription.scss";
+@import "blocks/social.scss";
 @import "blocks/user.scss";

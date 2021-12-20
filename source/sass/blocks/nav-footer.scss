@@ -1,0 +1,15 @@
+.nav-footer ul {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: 46.5% 35.7%;
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  gap: 30px 17.6%;
+  overflow-x: auto;
+}
+
+.nav-footer a {
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+}
