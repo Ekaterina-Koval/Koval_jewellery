@@ -36,6 +36,76 @@
         linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),url("../img/main/main-promo_large@2x.webp");
     }
   }
+
+  @media (max-width: $medium-width) {
+    background-image:
+      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+      url("../img/main/main-promo_medium.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_medium@2x.jpg");
+    }
+
+    .no-webp & {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_medium.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_medium@2x.jpg");
+      }
+    }
+
+    .webp & {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_medium.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),url("../img/main/main-promo_medium@2x.webp");
+      }
+    }
+  }
+
+@media (max-width: $small-width) {
+    background-image:
+      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+      url("../img/main/main-promo_small.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_small@2x.jpg");
+    }
+
+    .no-webp & {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_small.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_small@2x.jpg");
+      }
+    }
+
+    .webp & {
+      background-image:
+        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_small.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),url("../img/main/main-promo_small@2x.webp");
+      }
+    }
+  }
 }
 
 .promo__content {
