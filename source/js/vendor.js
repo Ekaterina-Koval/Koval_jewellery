@@ -28,3 +28,23 @@ $('.carousel').slick({
       }
     ]
 });
+
+var accordionToggle = document.querySelectorAll('.accordion__toggle');
+//  accordionItem = document.querySelectorAll('.accordion__item');
+accordionToggle.__proto__.forEach = [].__proto__.forEach;
+
+var activePanel;
+accordionToggle.forEach(function (item, i) {
+  item.addEventListener('click', function (e) {
+    //show new thingy;
+    this.classList.add('accordion__toggle--active');
+    this.nextElementSibling.classList.add('accordion__text--active');
+    //hide old thingy
+    if (activePanel) {
+      activePanel.classList.remove('accordion__toggle--active');
+      activePanel.nextElementSibling.classList.remove('accordion__text--active');
+    }
+    //update thingy
+    activePanel = (activePanel === this) ? 0 : this;
+  });
+});

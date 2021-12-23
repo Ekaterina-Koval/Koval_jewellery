@@ -1,0 +1,29 @@
+.accordion__text {
+  height: 0;
+  overflow: hidden;
+    transition: height 10s;
+    &--active {
+   height: min-content;
+  }
+}
+
+.accordion__toggle {
+   display: block;
+
+  .accordion__svg--down {
+    display: block;
+  }
+  .accordion__svg--up {
+    display: none;
+  }
+
+  &--active {
+    .accordion__svg--down {
+     display: none;
+    }
+
+    .accordion__svg--up {
+      display: block;
+    }
+  }
+}
