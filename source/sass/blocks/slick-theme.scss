@@ -69,9 +69,9 @@ $slick-opacity-not-active: 0.25 !default;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: transparent;
+    background: red;
     color: transparent;
-    top: 50%;
+    top: -82px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -101,7 +101,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 45px;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -115,7 +115,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 45px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;

@@ -1,0 +1,53 @@
+.follow {
+  @include display-flex-wrap;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.follow h2 {
+  @include section-title;
+}
+
+.follow__link {
+  @include page-link;
+}
+
+.follow ul {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 230px 150px;
+  gap: 34px 27px;
+
+  @media (max-width: $medium-width) {
+    grid-template-rows: 133px 87px;
+    gap: 20px 16px;
+  }
+
+  @media (max-width: $small-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 133px 87px 87px;
+    gap: 27px 24px;
+  }
+}
+
+.follow__item {
+  &--two-lines {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+
+  @media (max-width: $small-width) {
+    &--nosmall {
+      display: none;
+    }
+  }
+}
+
+.follow img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
