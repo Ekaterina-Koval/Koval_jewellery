@@ -1,26 +1,6 @@
-.nojs .carousel {
+.carousel {
   position: relative;
-/*  &__button {
-    position: absolute;
-    top: -82px;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: $accent-main;
-
-    &--next {
-      right: 0;
-    }
-
-    &--previous {
-      left: 0;
-    }
-  }
-
-  & svg {
-    vertical-align: middle;
-  }*/
+  width: 100%;
 }
 
 .nojs .carousel__item {
@@ -56,12 +36,15 @@
   width: 100%;
   display: block;
   height: 284px;
+  padding-right: 30px;
+  box-sizing: border-box;
   margin-bottom: 25px;
   object-fit: cover;
 }
 
 .carousel h3 {
   margin: 0 auto 15px;
+  padding-right: 30px;
   text-align: center;
   font-weight: 500;
   line-height: 21px;

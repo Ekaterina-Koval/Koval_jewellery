@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="CH Jewellery. Product сatalog">
+  <title>CH jewellery catalog</title>
+  <link rel="preload" href="fonts/cormorantgaramond-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-mediumitalic.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body class="page__body nojs">
+  <header class="page-header page-header--nonav">
+    <h1 class="visually-hidden">
+      CH jewellery
+    </h1>
+    <div class="page-header__header container header">
+      <form class="header__search search">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_search"></use>
+        </svg>
+        <label class="visually-hidden" for="search">
+          Type here to search
+        </label>
+        <input type="search" placeholder="Type here to search" id="search" name="q">
+      </form>
+      <div class="header__logo logo logo--nonav">
+        <a class="logo__link" href="main.html" aria-label="Logotype CH jewellery. Go to main page">
+          <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__user user">
+        <a class="user__icon-login" href="login.html" aria-label="Go to log in page">
+          <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+            <use xlink:href="img/sprite_auto.svg#icon_login"></use>
+          </svg>
+        </a>
+        <ul>
+          <li>
+            <a href="login.html" aria-label="Go to log in page">
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Go to cart">
+              Cart <span id="total-cart-count">0</span>
+            </a>
+        </li></ul>
+      </div>
+    </div>
+    <nav class="header__nav nav nav--close container">
+      <button type="button" class="nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
+      <ul>
+        <li>
+          <a class="nav__link" href="main.html#" aria-label="Go to the section what’s new">
+            What’s new
+          </a>
+        </li>
+        <li>
+          <a class="nav__link" href="main.html#" aria-label="Go to the section chokers">
+            Chokers
+          </a>
+        </li>
+        <li>
+          <a class="nav__link" href="main.html#" aria-label="Go to the section necklaces">
+            Necklaces
+          </a>
+        </li>
+        <li>
+          <a class="nav__link" href="main.html#" aria-label="Go to the section rings">
+            Rings
+          </a>
+        </li>
+        <li>
+          <a class="nav__link" href="main.html#">
+            Earrings
+          </a>
+        </li>
+        <li class="nav__item nav__item--more">
+          <a class="nav__link" href="main.html#">
+            About CH
+          </a>
+        </li>
+        <li class="nav__item nav__item--more">
+          <a class="nav__link" href="main.html#">
+            Stores & hours
+          </a>
+        </li>
+        <li class="nav__item nav__item--more">
+          <a class="nav__link" href="main.html#">
+            Contact us
+          </a>
+        </li>
+        <li class="nav__item nav__item--more">
+          <a class="nav__link" href="main.html#">
+            About CH
+          </a>
+        </li>
+        <li class="nav__item nav__item--more nav__item--login">
+          <a class="nav__link" href="main.html#">
+            Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-main__promo promo promo--catalog webp no-webp">
+      <div class="promo__content container">
+        <h2>
+          All jewellerry
+        </h2>
+        <p>
+          Discover picks of fashion's finest trends in our jewellery catalog
+        </p>
+      </div>
+    </section>
+    <section class="catalog container">
+      <h2 class="visually-hidden">
+        Product сatalog
+      </h2>
+      <button type="button" class="filters__open-button popup__open-button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
+      <div class="catalog__filters filters filters--large-view">
+        <form class="accordion" method="get" action="https://echo.htmlacademy.ru/">
+          <ul class="accordion__list">
+            <li class="accordion__item">
+              <fieldset>
+                <legend class="filters__toggle accordion__toggle" tabindex="0">
+                  Product
+                  <button type="button">
+                    <span class="visually-hidden">View filter</span>
+                    <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                    </svg>
+                    <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                    </svg>
+                  </button>
+                </legend>
+                <ul class="accordion__content">
+                  <li>
+                    <input type="checkbox" name="necklaces" id="necklaces" checked="">
+                    <label for="necklaces">
+                      Necklaces
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="chokers" id="chokers" checked="">
+                    <label for="chokers">
+                      Chokers
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="rings" id="rings">
+                    <label for="rings">
+                      Rings
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="earrings" id="earrings" checked="">
+                    <label for="earrings">
+                      Earrings
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="accordion__item">
+              <fieldset>
+                <legend class="filters__toggle accordion__toggle" tabindex="0">
+                  Material
+                  <button type="button">
+                    <span class="visually-hidden">View filter</span>
+                    <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                    </svg>
+                    <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                    </svg>
+                  </button>
+                </legend>
+                <ul class="accordion__content">
+                  <li>
+                    <input type="checkbox" name="gold" id="gold" checked="">
+                    <label for="gold">
+                      Gold
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="silver" id="silver">
+                    <label for="silver">
+                      Silver
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="accordion__item">
+              <fieldset>
+                <legend class="filters__toggle accordion__toggle" tabindex="0">
+                  Collection
+                  <button type="button">
+                    <span class="visually-hidden">View filter</span>
+                    <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                    </svg>
+                    <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                    </svg>
+                  </button>
+                </legend>
+                <ul class="accordion__content">
+                  <li>
+                    <input type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
+                    <label for="pink-flamingo">
+                      Pink flamingo
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="dreams" id="dreams">
+                    <label for="dreams">
+                      Dreams
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="filters__item accordion__item">
+              <fieldset>
+                <legend class="filters__toggle accordion__toggle" tabindex="0">
+                  Price
+                  <button type="button">
+                    <span class="visually-hidden">View filter</span>
+                    <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                    </svg>
+                    <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                      <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                    </svg>
+                  </button>
+                </legend>
+                <div class="filters__price accordion__content">
+                  <div class="price__wrapper">
+                    <div class="price__scale ">
+                      <div class="price__bar"></div>
+                    </div>
+                    <div class="price__toggle price__toggle--min" tabindex="0" aria-label="Toggle max
+                  price">
+                      <span aria-label="Toggle min
+                  price">&#8381;&nbsp;55</span>
+                    </div>
+                    <div class="price__toggle price__toggle--max" tabindex="0" aria-label="Toggle max
+                  price"><span>&#8381;&nbsp;155</span></div>
+                  </div>
+                </div>
+              </fieldset>
+            </li>
+            <button type="submit">
+              Apply
+            </button>
+            <button type="button">
+              Clear all
+            </button>
+        </ul></form>
+      </div>
+      <div class="catalog__products products">
+        <ul class="products__list">
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/double-pearl-earrings_small.webp 1x, img/products/double-pearl-earrings_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/double-pearl-earrings_medium.webp 1x, img/products/double-pearl-earrings_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/double-pearl-earrings_large.webp 1x, img/products/double-pearl-earrings_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/double-pearl-earrings_small.jpg 1x, img/products/double-pearl-earrings_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/double-pearl-earrings_medium.jpg 1x, img/products/double-pearl-earrings_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/double-pearl-earrings_large.jpg" srcset="img/products/double-pearl-earrings_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Double pearl earrings
+              </h3>
+              <span>
+                $ 115
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/black-choker-gold-bead_small.webp 1x, img/products/black-choker-gold-bead_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/black-choker-gold-bead_medium.webp 1x, img/products/black-choker-gold-bead_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/black-choker-gold-bead_large.webp 1x, img/products/black-choker-gold-bead_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/black-choker-gold-bead_small.jpg 1x, img/products/black-choker-gold-bead_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/black-choker-gold-bead_medium.jpg 1x, img/products/black-choker-gold-bead_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/black-choker-gold-bead_large.jpg" srcset="img/products/black-choker-gold-bead_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Choker with gold bead
+              </h3>
+              <span>
+                $ 55
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/gold-layered-necklace_small.webp 1x, img/products/gold-layered-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/gold-layered-necklace_medium.webp 1x, img/products/gold-layered-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/gold-layered-necklace_large.webp 1x, img/products/gold-layered-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/gold-layered-necklace_small.jpg 1x, img/products/gold-layered-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/gold-layered-necklace_medium.jpg 1x, img/products/gold-layered-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/gold-layered-necklace_large.jpg" srcset="img/products/gold-layered-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Gold layered necklace
+              </h3>
+              <span>
+                $ 155
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/blue-gemstone-pendant_small.webp 1x, img/products/blue-gemstone-pendant_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/blue-gemstone-pendant_medium.webp 1x, img/products/blue-gemstone-pendant_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/blue-gemstone-pendant_large.webp 1x, img/products/blue-gemstone-pendant_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/blue-gemstone-pendant_small.jpg 1x, img/products/blue-gemstone-pendant_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/blue-gemstone-pendant_medium.jpg 1x, img/products/blue-gemstone-pendant_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/blue-gemstone-pendant_large.jpg" srcset="img/products/blue-gemstone-pendant_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Blue gemstone pendant
+              </h3>
+              <span>
+                $ 105
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/boho-earrings_small.webp 1x, img/products/boho-earrings_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/boho-earrings_medium.webp 1x, img/products/boho-earrings_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/boho-earrings_large.webp 1x, img/products/boho-earrings_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/boho-earrings_small.jpg 1x, img/products/boho-earrings_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/boho-earrings_medium.jpg 1x, img/products/boho-earrings_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/boho-earrings_large.jpg" srcset="img/products/boho-earrings_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Boho earrings
+              </h3>
+              <span>
+                $ 75
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/bird-necklace_small.webp 1x, img/products/bird-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/bird-necklace_medium.webp 1x, img/products/bird-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/bird-necklace_large.webp 1x, img/products/bird-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/bird-necklace_small.jpg 1x, img/products/bird-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/bird-necklace_medium.jpg 1x, img/products/bird-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/bird-necklace_large.jpg" srcset="img/products/bird-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Gold bird necklace
+              </h3>
+              <span>
+                $ 135
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/black-leather-choker-necklace_small.webp 1x, img/products/black-leather-choker-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/black-leather-choker-necklace_medium.webp 1x, img/products/black-leather-choker-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/black-leather-choker-necklace_large.webp 1x, img/products/black-leather-choker-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/black-leather-choker-necklace_small.jpg 1x, img/products/black-leather-choker-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/black-leather-choker-necklace_medium.jpg 1x, img/products/black-leather-choker-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/black-leather-choker-necklace_large.jpg" srcset="img/products/black-leather-choker-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Black leather choker
+              </h3>
+              <span>
+                $ 145
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/purple-gemstone-necklace_small.webp 1x, img/products/purple-gemstone-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/purple-gemstone-necklace_medium.webp 1x, img/products/purple-gemstone-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/purple-gemstone-necklace_large.webp 1x, img/products/purple-gemstone-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/purple-gemstone-necklace_small.jpg 1x, img/products/purple-gemstone-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/purple-gemstone-necklace_medium.jpg 1x, img/products/purple-gemstone-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/purple-gemstone-necklace_large.jpg" srcset="img/products/purple-gemstone-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Necklace with amethyst
+              </h3>
+              <span>
+                $ 145
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/elephant-earrings_small.webp 1x, img/products/elephant-earrings_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/elephant-earrings_medium.webp 1x, img/products/elephant-earrings_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/elephant-earrings_large.webp 1x, img/products/elephant-earrings_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/elephant-earrings_small.jpg 1x, img/products/elephant-earrings_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/elephant-earrings_medium.jpg 1x, img/products/elephant-earrings_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/elephant-earrings_large.jpg" srcset="img/products/elephant-earrings_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Elephant earrings
+              </h3>
+              <span>
+                $ 95
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/threader-necklace-closeup_small.webp 1x, img/products/threader-necklace-closeup_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/threader-necklace-closeup_medium.webp 1x, imgproducts/threader-necklace-closeup_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/threader-necklace-closeup_large.webp 1x, img/products/threader-necklace-closeup_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/threader-necklace-closeup_small.jpg 1x, img/products/threader-necklace-closeup_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/threader-necklace-closeup_medium.jpg 1x, img/products/threader-necklace-closeup_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/threader-necklace-closeup_large.jpg" srcset="img/products/threader-necklace-closeup_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Threader necklace
+              </h3>
+              <span>
+                $ 115
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/origami-crane-necklace_small.webp 1x, img/products/origami-crane-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/origami-crane-necklace_medium.webp 1x, imgproducts/origami-crane-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/origami-crane-necklace_large.webp 1x, img/products/origami-crane-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/origami-crane-necklace_small.jpg 1x, img/products/origami-crane-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/origami-crane-necklace_medium.jpg 1x, img/products/origami-crane-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/origami-crane-necklace_large.jpg" srcset="img/products/origami-crane-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Origami crane necklace
+              </h3>
+              <span>
+                $ 105
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/marble-earrings_small.webp 1x, img/products/marble-earrings_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/marble-earrings_medium.webp 1x, imgproducts/marble-earrings_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/marble-earrings_large.webp 1x, img/products/marble-earrings_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/marble-earrings_small.jpg 1x, img/products/marble-earrings_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/marble-earrings_medium.jpg 1x, img/products/marble-earrings_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/marble-earrings_large.jpg" srcset="img/products/marble-earrings_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Marble earrings
+              </h3>
+              <span>
+                $ 95
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/layered-choker-necklace_small.webp 1x, img/products/layered-choker-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/layered-choker-necklace_medium.webp 1x, img/products/layered-choker-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/layered-choker-necklace_large.webp 1x, img/products/layered-choker-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/layered-choker-necklace_small.jpg 1x, img/products/layered-choker-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/layered-choker-necklace_medium.jpg 1x, img/products/layered-choker-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/layered-choker-necklace_large.jpg" srcset="img/products/layered-choker-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Layered choker
+              </h3>
+              <span>
+                $ 115
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/dainty-gold-necklace_small.webp 1x, img/products/dainty-gold-necklace_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/dainty-gold-necklace_medium.webp 1x, img/products/dainty-gold-necklace_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/dainty-gold-necklace_large.webp 1x, img/products/dainty-gold-necklace_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/dainty-gold-necklace_small.jpg 1x, img/products/dainty-gold-necklace_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/dainty-gold-necklace_medium.jpg 1x, img/products/dainty-gold-necklace_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/dainty-gold-necklace_large.jpg" srcset="img/products/dainty-gold-necklace_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Gold chain
+              </h3>
+              <span>
+                $ 215
+              </span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/products/galaxy-earrings_small.webp 1x, img/products/galaxy-earrings_small@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/products/galaxy-earrings_medium.webp 1x, img/products/galaxy-earrings_medium@2x.webp 2x" media="(max-width: 1023px)">
+                <source type="image/webp" srcset="img/products/galaxy-earrings_large.webp 1x, img/products/galaxy-earrings_large@2x.webp 2x">
+                <!--img size (max-width 767px): 1x(width: 130px, hight: 136px), 2x(width: 260px, hight: 272px-->
+                <source media="(max-width: 767px)" srcset="img/products/galaxy-earrings_small.jpg 1x, img/products/galaxy-earrings_small@2x.jpg 2x">
+                <!--img size (max-width 1023px): 1x(width: 324px, hight: 340px), 2x(width: 648px, hight: 680px-->
+                <source media="(max-width: 1023px)" srcset="img/products/galaxy-earrings_medium.jpg 1x, img/products/galaxy-earrings_medium@2x.jpg 2x">
+                <!--img size (min-width 1024px): 1x(width: 270px, hight: 284px 2x(width: 540px, hight: 568px-->
+                <img src="img/products/galaxy-earrings_large.jpg" srcset="img/products/galaxy-earrings_large@2x.jpg 2x" width="270" height="284" alt="Product image from the catalog">
+              </picture>
+              <h3>
+                Galaxy earrings
+              </h3>
+              <span>
+                $ 95
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="products__pagination pagination">
+          <h3 class="visually-hidden">Navigation of products from the catalog</h3>
+          <button type="button">Previous</button>
+          <ol>
+            <li class="pagination__item pagination__item--current">
+              <a class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+          </ol>
+          <button type="button">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer footer">
+    <div class="footer__wrapper container">
+      <section class="subscription">
+        <h2>The good stuff in your inbox</h2>
+        <form class="subscription__form form" action="#" method="post">
+          <fieldset>
+            <legend>
+              News and updates from CH. No spam, we promise.
+            </legend>
+            <input type="email" name="email" placeholder="Your E-mail" required="">
+            <button type="submit">
+              <a href="#" aria-label="Go to registration page">
+                Sign up
+              </a>
+              <svg width="30" height="11" viewBox="0 0 30 11" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                <use xlink:href="img/sprite_auto.svg#icon_arrow-footer"></use>
+              </svg>
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="footer__nav nav-footer">
+        <h2 class="visually-hidden">Information menu</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" aria-label="Go to Ordering & Payment">
+                Ordering & payment
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Terms & Conditions">
+                Terms & conditions
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Returns & Exchanges">
+                Returns & exchanges
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Delivery">
+                Delivery
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to About CH">
+                About CH
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Stores & Hours">
+                Stores & hours
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to Jobs">
+                Jobs
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Go to log in page">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <div class="footer__social social">
+          <h2 class="visually-hidden">We are in social networks</h2>
+          <ul>
+            <li>
+              <a class="social__link" href="#">
+                <svg width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_facebook"></use>
+                </svg>
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_instagram"></use>
+                </svg>
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_pinterest"></use>
+                </svg>
+                <span>
+                  Pinterest
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                  <use xlink:href="img/sprite_auto.svg#icon_twitter"></use>
+                </svg>
+                <span>
+                  Twitter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <template id="login">
+    <article class="popup login">
+      <button type="button" class="login__close-button popup__close-button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
+      <div class="login__wrapper">
+        <h2>
+          Log in
+        </h2>
+        <form class="subscription__form form" action="#" method="post">
+          <fieldset>
+            <input type="email" name="email" placeholder="Your E-mail" required="">
+            <input type="password" name="password" placeholder="Password" required="">
+            <button type="submit">
+              Log in
+            </button>
+            <p>
+              Don’t have an account?
+            </p>
+            <a href="#" aria-label="Go to registration page">
+              Sign up
+            </a>
+          </fieldset>
+        </form>
+      </div>
+    </article>
+  </template>
+
+  <template id="filters">
+    <div class="catalog__filters filters popup">
+      <button type="button" class="filters__close-button popup__close-button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
+      <form class="accordion" method="get" action="https://echo.htmlacademy.ru/">
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <fieldset>
+              <legend class="filters__toggle accordion__toggle" tabindex="0">
+                Product
+                <button type="button">
+                  <span class="visually-hidden">View filter</span>
+                  <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                  </svg>
+                  <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                  </svg>
+                </button>
+              </legend>
+              <ul class="accordion__content">
+                <li>
+                  <input type="checkbox" name="necklaces" id="necklaces" checked="">
+                  <label for="necklaces">
+                    Necklaces
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="chokers" id="chokers" checked="">
+                  <label for="chokers">
+                    Chokers
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="rings" id="rings">
+                  <label for="rings">
+                    Rings
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="earrings" id="earrings" checked="">
+                  <label for="earrings">
+                    Earrings
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="accordion__item">
+            <fieldset>
+              <legend class="filters__toggle accordion__toggle" tabindex="0">
+                Material
+                <button type="button">
+                  <span class="visually-hidden">View filter</span>
+                  <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                  </svg>
+                  <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                  </svg>
+                </button>
+              </legend>
+              <ul class="accordion__content">
+                <li>
+                  <input type="checkbox" name="gold" id="gold" checked="">
+                  <label for="gold">
+                    Gold
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="silver" id="silver">
+                  <label for="silver">
+                    Silver
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="accordion__item">
+            <fieldset>
+              <legend class="filters__toggle accordion__toggle" tabindex="0">
+                Collection
+                <button type="button">
+                  <span class="visually-hidden">View filter</span>
+                  <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                  </svg>
+                  <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                  </svg>
+                </button>
+              </legend>
+              <ul class="accordion__content">
+                <li>
+                  <input type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
+                  <label for="pink-flamingo">
+                    Pink flamingo
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dreams" id="dreams">
+                  <label for="dreams">
+                    Dreams
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="filters__item accordion__item">
+            <fieldset>
+              <legend class="filters__toggle accordion__toggle" tabindex="0">
+                Price
+                <button type="button">
+                  <span class="visually-hidden">View filter</span>
+                  <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-down"></use>
+                  </svg>
+                  <svg class="accordion__svg accordion__svg--up" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <use xlink:href="img/sprite_auto.svg#icon_accordion-up"></use>
+                  </svg>
+                </button>
+              </legend>
+              <div class="filters__price accordion__content">
+                <div class="price__wrapper">
+                  <div class="price__scale ">
+                    <div class="price__bar"></div>
+                  </div>
+                  <div class="price__toggle price__toggle--min" tabindex="0" aria-label="Toggle max
+                    price">
+                    <span aria-label="Toggle min
+                    price">&#8381;&nbsp;55</span>
+                  </div>
+                  <div class="price__toggle price__toggle--max" tabindex="0" aria-label="Toggle max
+                    price"><span>&#8381;&nbsp;155</span></div>
+                </div>
+              </div>
+            </fieldset>
+          </li>
+          <button type="submit">
+            Apply
+          </button>
+          <button type="button">
+            Clear all
+          </button>
+      </ul></form>
+    </div>
+  </template>
+
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+
+</body>
+
+</html>

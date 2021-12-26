@@ -1,0 +1,51 @@
+.products {
+  @include display-flex-wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, min(334px));
+  gap: 40px 6.4%;
+  grid-auto-rows: 0;  // Удалить,
+  overflow-y: hidden; // после удаления последних элементов каталога
+}
+
+.products__item {
+  width: 100%;
+  min-height: 334px;
+  margin: 0;
+  padding: 0;
+}
+
+.products a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.products img {
+  width: 100%;
+  display: block;
+  height: 272px;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+.products h3 {
+  margin: 0 auto 15px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.products span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+}

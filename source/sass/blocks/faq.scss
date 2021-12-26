@@ -4,25 +4,10 @@
   padding-bottom: 80px;
 }
 
-.faq ul {
-  @include reset-list;
-
-}
-
-.faq li {
-  padding: 50px;
-  box-sizing: border-box;
-  border: 1px solid $accent-main;
-
-  &:not(:first-child) {
-   border-top: none;
-  }
-}
-
 .faq h2 {
   @include section-title;
 }
 
-.faq__link {
-  @include page-link;
+.faq h3 {
+  cursor: pointer;
 }

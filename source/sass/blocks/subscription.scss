@@ -57,8 +57,10 @@
   }
 }
 
-.subscription span {
+.subscription a {
   margin-right: 12px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .subscription button {

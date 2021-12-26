@@ -12,39 +12,38 @@ $('.carousel').slick({
   dots: true,
   slidesToShow: 4,
   slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          arrows: false,
-        }
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
-    ]
-});
-
-var accordionToggle = document.querySelectorAll('.accordion__toggle');
-//  accordionItem = document.querySelectorAll('.accordion__item');
-accordionToggle.__proto__.forEach = [].__proto__.forEach;
-
-var activePanel;
-accordionToggle.forEach(function (item, i) {
-  item.addEventListener('click', function (e) {
-    //show new thingy;
-    this.classList.add('accordion__toggle--active');
-    this.nextElementSibling.classList.add('accordion__text--active');
-    //hide old thingy
-    if (activePanel) {
-      activePanel.classList.remove('accordion__toggle--active');
-      activePanel.nextElementSibling.classList.remove('accordion__text--active');
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+      }
     }
-    //update thingy
-    activePanel = (activePanel === this) ? 0 : this;
-  });
+  ]
 });
+
+(() => {
+  const accordion = document.querySelector('.accordion');
+  const accordionToggle = accordion.querySelectorAll('.accordion__toggle');
+  accordionToggle.__proto__.forEach = [].__proto__.forEach;
+
+  let activePanel;
+  accordionToggle.forEach(function (item) {
+    item.addEventListener('click', function () {
+      this.classList.add('accordion__toggle--active');
+      this.nextElementSibling.classList.add('accordion__content--active');
+      if (activePanel) {
+        this.classList.remove('accordion__toggle--active');
+        this.nextElementSibling.classList.remove('accordion__content--active');
+      }
+      activePanel = (activePanel === this) ? 0 : this;
+    });
+  });
+})();

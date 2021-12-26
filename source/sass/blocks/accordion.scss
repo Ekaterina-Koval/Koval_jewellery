@@ -1,9 +1,29 @@
-.accordion__text {
+.accordion__list {
+  @include reset-list;
+  @include display-flex-wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accordion__item {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid $accent-main;
+
+  &:not(:first-child) {
+   border-top: none;
+  }
+}
+
+.accordion__content {
   height: 0;
   overflow: hidden;
-    transition: height 10s;
-    &--active {
-   height: min-content;
+  transition: height 1s;
+
+  &--active,
+  .nojs & {
+    height: min-content;
   }
 }
 

@@ -14,17 +14,17 @@
   text-decoration: none;
 }
 
-.user__icon-login {
+.user svg{
   display: none;
 }
 
 @media (max-width: $medium-width) {
   .user {
-    ul {
+    span {
       display: none;
     }
 
-    &__icon-login {
+    svg {
       position: absolute;
       right: 45px;
       display: block;

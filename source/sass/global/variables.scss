@@ -1,7 +1,7 @@
 //colors
 $basic-black: #000000;
 $basic-white: #ffffff;
-$basic-black-opacity: (0, 0, 0, 0.1);
+$basic-black-opacity01: (0, 0, 0, 0.1);
 
 $basic-content-dark: #1D1613;
 $basic-content-light: #9B9997;
@@ -9,6 +9,8 @@ $accent-main: #A87B62;
 $accent-bg: #563634;
 $accent-bg-light: #f0eae4;
 $accent-bg-opacity07: rgba(86, 64, 52, 0.7);
+$popup-shadow: #f8f7f5;
+$popup-accent-bg: #f0eae4;
 
 //viewport width
 $small-width: 767px;

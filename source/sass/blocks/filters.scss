@@ -1,0 +1,68 @@
+.filters,
+.filters form {
+  @include display-flex-wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filters fieldset {
+  border: none;
+  box-sizing: border-box;
+
+  ul {
+    @include reset-list;
+  }
+
+  li {
+    padding-left: 40px;
+  }
+}
+
+.filters legend {
+  margin: 0;
+  padding: 0;
+}
+
+.filters input {
+  display: none;
+}
+
+.filters input {
+  & + label {
+    position: relative;
+    vertical-align: middle;
+      &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      left: -35px;
+      top: 5px;
+      box-sizing: border-box;
+      border: 1px solid $accent-main;
+      background-color: $basic-white;
+    }
+  }
+
+  &:checked + label::before {
+    background-color: $accent-main;
+  }
+}
+
+.filters__price {
+  overflow: hidden;
+}
+
+.filters__open-button {
+  display: none;
+}
+
+@media (max-width: $medium-width) {
+  .filters__open-button {
+    display: block;
+  }
+  .filters--large-view {
+    display: none;
+  }
+}
+
