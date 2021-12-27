@@ -43,26 +43,29 @@
     letter-spacing: 0.05em;
     color: $basic-content-light;
   }
-
 }
 
 @media (max-width: $medium-width) {
- .search {
-    order: 1;
-    width: 100%;
-    margin: 35px 0 14px;
- }
-
- .search svg {
-   width: 16px;
-   height: 16px;
- }
-
- .search input {
-   min-height: 40px;
-
-  &::placeholder {
-    color: transparent;
+  .search,
+  .page-header--close .search {
+    display: none
   }
- }
+
+  .search .nojs,
+  .page-header--open .search {
+    display: block;
+    order: 1;
+  }
+
+  .search svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search input {
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }

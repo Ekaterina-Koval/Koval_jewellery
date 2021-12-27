@@ -20,11 +20,18 @@
 </head>
 
 <body class="page__body nojs">
-  <header class="page-header page-header--nonav">
+  <header class="page-header">
     <h1 class="visually-hidden">
       CH jewellery
     </h1>
-    <div class="page-header__header container header">
+    <div class="page-header__header header container ">
+      <button type="button" class="page-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
       <form class="header__search search">
         <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
           <use xlink:href="img/sprite_auto.svg#icon_search"></use>
@@ -34,7 +41,7 @@
         </label>
         <input type="search" placeholder="Type here to search" id="search" name="q">
       </form>
-      <div class="header__logo logo logo--nonav">
+      <div class="header__logo logo">
         <a class="logo__link" aria-label="Logotype CH jewellery. Go to main page">
           <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -62,14 +69,7 @@
         </ul>
       </div>
     </div>
-    <nav class="header__nav nav nav--close container">
-      <button type="button" class="nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-        <svg width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-          stroke="currentColor">
-          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
-        </svg>
-      </button>
+    <nav class="header__nav nav container">
       <ul class="nav__main">
         <li>
           <a class="nav__link" href="main.html#newin" aria-label="Go to the section what&#8242;s new">
@@ -609,8 +609,8 @@
             <a class="articles__link" href="catalog.html" aria-label="View this article in full">
               <span>Read article</span>
             </a>
+          </div>
         </li>
-      </ul>
       </ul>
     </section>
     <section class="faq container">
@@ -852,6 +852,7 @@
               height="150" alt="Chjewellery product photo">
           </picture>
         </li>
+      </ul>
     </section>
   </main>
   <footer class="page-footer footer">
@@ -864,7 +865,7 @@
               News and updates from CH. No spam, we promise.
             </legend>
             <input type="email" name="email" placeholder="Your E-mail" required />
-            <button type="submit">
+            <div>
               <a href=# aria-label="Go to registration page">
                 Sign up
               </a>
@@ -872,7 +873,7 @@
                 stroke="currentColor">
                 <use xlink:href="img/sprite_auto.svg#icon_arrow-footer"></use>
               </svg>
-            </button>
+            </div>
           </fieldset>
         </form>
       </section>

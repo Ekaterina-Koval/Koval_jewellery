@@ -1,10 +1,33 @@
 'use strict';
 
 const body = document.querySelector('.page__body');
+const header = body.querySelector('.page-header');
 
 
 body.classList.remove('nojs');
 
+(() => {
+  const headerToggle = body.querySelector('.page-header__toggle');
+  const navLinks = body.querySelectorAll('.nav a');
+  const navSvitches = () => {
+    if (header.classList.contains('page-header--open')) {
+      header.classList.remove('page-header--open');
+      header.classList.add('page-header--close');
+      body.classList.remove('not-available');
+    } else {
+      header.classList.add('page-header--open');
+      header.classList.remove('page-header--close');
+      body.classList.add('not-available');
+    }
+  };
+  headerToggle.addEventListener('click', navSvitches);
+  if (window.matchMedia('(max-width: 1024px)').matches) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', navSvitches);
+    });
+  }
+})();
+/*
 (() => {
   const header = body.querySelector('.page-header');
   const navMain = body.querySelector('.nav');
@@ -37,7 +60,7 @@ body.classList.remove('nojs');
     });
   }
 })();
-
+*/
 (() => {
   const popupEvents = (popupOpenButtonClassName, popupId) => {
     const popupOpen = document.querySelectorAll(`.${popupOpenButtonClassName}`);

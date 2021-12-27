@@ -15,18 +15,20 @@
 }
 
 @media (max-width: $medium-width) {
-  .logo {
-    &--nonav svg {
-      fill: $accent-main;
-    }
+  .logo svg {
+    fill: $accent-main;
 
-    &--nav svg {
-      fill: $basic-white;
+    .page-header--close & {
+      fill: $accent-main;
     }
   }
 
-  .nojs .logo {
-    svg {
+  .logo svg {
+    .page-header--open & {
+      fill: $basic-white;
+    }
+
+    .nojs & {
       fill: $basic-white;
     }
   }

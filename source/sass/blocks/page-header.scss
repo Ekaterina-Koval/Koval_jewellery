@@ -1,25 +1,55 @@
 .page-header {
   @media (max-width: $medium-width) {
-    &--nonav {
-      background-color: transparent;
-      color: $basic-content-dark;
+    height: min-content;
+    background-color: transparent;
+    color: $basic-content-dark;
 
-      & .search {
-        display: none;
-      }
+    .nojs & {
+      background-color: $accent-main;
+      color: $basic-white;
     }
 
-    &--nav {
+    &--close {
+      background-color: transparent;
+      color: $basic-content-dark;
+    }
+
+    &--open {
       height: 100vh;
       overflow-y: auto;
       background-color: $accent-main;
       color: $basic-white;
     }
+  }
+}
 
-    .nojs & {
-      height: min-content;
-      background-color: $accent-main;
-      color: $basic-white;
+.page-header__toggle {
+  display: none;
+
+  @media (max-width: $medium-width) {
+    display: block;
+    position: absolute;
+
+    top: 145px;
+    width: 40px;
+    height: 32px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 16px;
+
+    & svg {
+      &:hover {
+        stroke: $accent-bg-opacity07;
+      }
+
+      &:active {
+        stroke: $accent-bg;
+      }
     }
   }
 }
