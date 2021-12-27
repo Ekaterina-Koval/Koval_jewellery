@@ -1,15 +1,18 @@
 .nav {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
-  &__more {
-    display: none;
+  @media (min-width: $large-width-only) {
+    &__main {
+      @include reset-list;
+      @include display-flex-wrap;
+      justify-content: center;
+    }
+
+    &__about,
+    &__user {
+      display: none;
+    }
   }
-}
-
-.nav ul {
-  @include reset-list;
-  @include display-flex-wrap;
-  justify-content: center;
 }
 
 .nav li {
@@ -18,11 +21,10 @@
   }
 }
 
-.nav__item--more {
-  display: none;
-}
-
 .nav a {
+  width: inherit;
+  text-align: center;
+  vertical-align: middle;
   color: inherit;
   text-decoration: none;
 }
@@ -32,19 +34,17 @@
 }
 
 @media (max-width: $medium-width) {
-  .nav {
-    padding: 0 45px;
-  }
-
-  .nav__item--more {
-    display: block;
-  }
-
-  .nav--open ul {
+  .nav--open {
     position: absolute;
-    bottom: -1;
     z-index: 1;
+
+    & ul {
     flex-direction: column;
+    }
+
+    .nav__toggle {
+      top: -154px;
+    }
   }
 
   .nav--close ul {
@@ -54,10 +54,11 @@
   .nav__toggle {
     display: block;
     position: absolute;
-    top: 55px;
-    left: 45px;
-    width: 25px;
-    height: 16px;
+    top: 46px;
+    left: 38px;
+    width: 40px;
+    height: 32px;
+    padding: 8px;
     cursor: pointer;
     border: none;
     color: inherit;
@@ -85,8 +86,11 @@
 
     ul {
       display: block;
-      position: absolute;
+
       height: 368px;
+      margin: 0;
+      padding: 0 45px;
+      flex-direction: column;
     }
 
     .nav__toggle {

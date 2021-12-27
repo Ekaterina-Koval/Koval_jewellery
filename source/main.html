@@ -26,8 +26,7 @@
     </h1>
     <div class="page-header__header container header">
       <form class="header__search search">
-        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-          stroke="currentColor">
+        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
           <use xlink:href="img/sprite_auto.svg#icon_search"></use>
         </svg>
         <label class="visually-hidden" for="search">
@@ -53,12 +52,12 @@
           </li>
           <li>
             <a href="#" aria-label="Go to cart">
-              <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 stroke="currentColor">
-                <use xlink:href="img/sprite_auto.svg#icon_login"></use>
+                <use xlink:href="img/sprite_auto.svg#icon_cart"></use>
               </svg>
               <span>Cart</span>
-              <span id="total-cart-count">0</span>
+              <span>0</span>
             </a>
         </ul>
       </div>
@@ -66,59 +65,62 @@
     <nav class="header__nav nav nav--close container">
       <button type="button" class="nav__toggle">
         <span class="visually-hidden">Открыть меню</span>
-        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+        <svg width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
           stroke="currentColor">
           <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
         </svg>
       </button>
-      <ul>
+      <ul class="nav__main">
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section what’s new">
-            What’s new
+          <a class="nav__link" href="main.html#newin" aria-label="Go to the section what&#8242;s new">
+            What&#8242;s new
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section chokers">
+          <a class="nav__link" href="#" aria-label="Go to the section chokers">
             Chokers
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section necklaces">
+          <a class="nav__link" href="#" aria-label="Go to the section necklaces">
             Necklaces
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section rings">
+          <a class="nav__link" href="#" aria-label="Go to the section rings">
             Rings
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#">
+          <a class="nav__link" href="#">
             Earrings
           </a>
         </li>
-
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+      </ul>
+      <ul class="nav__about">
+        <li>
+          <a class="nav__link" href="#">
             About CH
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+        <li>
+          <a class="nav__link" href="#">
             Stores & hours
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+        <li>
+          <a class="nav__link" href="#">
             Contact us
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+        <li>
+          <a class="nav__link" href="#">
             About CH
           </a>
         </li>
-        <li class="nav__item nav__item--more nav__item--last">
+      </ul>
+      <ul class="nav__user">
+        <li>
           <a class="user__popup nav__link" href="login.html" aria-label="Go to log in page">
             Login
           </a>
@@ -137,7 +139,7 @@
         </p>
       </div>
     </section>
-    <section class="novelty container">
+    <section class="novelty container" id="newin">
       <h2>
         New in
       </h2>
@@ -996,7 +998,7 @@
               Log in
             </button>
             <p>
-              Don’t have an account?
+              Don&#8242;t have an account?
             </p>
             <a href="#" aria-label="Go to registration page">
               Sign up

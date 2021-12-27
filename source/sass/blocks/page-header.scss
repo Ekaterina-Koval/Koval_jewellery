@@ -1,8 +1,5 @@
 .page-header {
-  position: relative;
   @media (max-width: $medium-width) {
-    min-height: 126px;
-
     &--nonav {
       background-color: transparent;
       color: $basic-content-dark;

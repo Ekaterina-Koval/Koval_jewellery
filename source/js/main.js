@@ -1,15 +1,16 @@
 'use strict';
 
 const body = document.querySelector('.page__body');
-const header = body.querySelector('.page-header');
-const navMain = body.querySelector('.nav');
-const navToggle = body.querySelector('.nav__toggle');
-const navLinks = body.querySelectorAll('.nav a');
-const logo = body.querySelector('.logo');
+
 
 body.classList.remove('nojs');
 
 (() => {
+  const header = body.querySelector('.page-header');
+  const navMain = body.querySelector('.nav');
+  const navToggle = body.querySelector('.nav__toggle');
+  const navLinks = body.querySelectorAll('.nav a');
+  const logo = body.querySelector('.logo');
   const navSvitches = () => {
     if (navMain.classList.contains('nav--open')) {
       navMain.classList.remove('nav--open');
@@ -30,9 +31,11 @@ body.classList.remove('nojs');
     }
   };
   navToggle.addEventListener('click', navSvitches);
-  navLinks.forEach(link => {
-    link.addEventListener('click', navSvitches);
-  });
+  if (window.matchMedia('(max-width: 1024px)').matches) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', navSvitches);
+    });
+  }
 })();
 
 (() => {

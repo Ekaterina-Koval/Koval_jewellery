@@ -1,3 +1,9 @@
+.user {
+  @include display-flex-wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+
 .user ul {
   @include reset-list;
   @include display-flex-wrap;
@@ -20,16 +26,15 @@
 
 @media (max-width: $medium-width) {
   .user {
+    position: absolute;
+    right: 45px;
+    top: 54px;
     span {
       display: none;
     }
 
-    svg {
-      position: absolute;
-      right: 45px;
-      display: block;
-
     & svg {
+      display: block;
       &:hover {
         fill: $accent-bg-opacity07;
         stroke: $accent-bg-opacity07;
@@ -39,7 +44,7 @@
         fill: $accent-bg-opacity07;
         stroke: $accent-bg;
       }
-    }
+
     }
   }
 }
