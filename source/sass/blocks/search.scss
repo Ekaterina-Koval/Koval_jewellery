@@ -17,31 +17,32 @@
 .search input {
   width: 100%;
   min-height: 14px;
-  padding: 0;
+  padding: 0 26px;
   box-sizing: border-box;
   background-color: rgba($basic-white, 0.15);
   border: 2px solid transparent;
   border-radius: 21px;
   outline: none;
 
-  &:hover {
-    border: 2px solid $accent-bg-opacity07;
-    box-shadow: 0px 5px 10px 2px $accent-bg-opacity07;
-  }
-
-  &:focus {
-    border: 2px solid $accent-bg;
-  }
-
   &::placeholder {
-    padding: 0 26px;
-
     @include poppins-font;
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
     letter-spacing: 0.05em;
     color: $basic-content-light;
+  }
+
+  &:hover {
+    &::placeholder {
+      color: $accent-bg;
+    }
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
   }
 }
 
@@ -55,17 +56,32 @@
   .page-header--open .search {
     display: block;
     order: 1;
+    grid-column: 1/4;
+    min-height: 40px;
   }
 
   .search svg {
     width: 16px;
     height: 16px;
+    left: 12px;
   }
 
   .search input {
+    min-height: 40px;
+    padding: 0 40px;
 
     &::placeholder {
       color: transparent;
     }
+
+    &:hover {
+      border: 2px solid $accent-bg-opacity07;
+      box-shadow: 0px 5px 10px 2px $accent-bg-opacity07;
+    }
+
+    &:focus {
+      border: 2px solid $accent-bg;
+    }
   }
+
 }

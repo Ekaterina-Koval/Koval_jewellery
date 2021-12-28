@@ -8,7 +8,7 @@ body.classList.remove('nojs');
 
 (() => {
   const headerToggle = body.querySelector('.page-header__toggle');
-  const navLinks = body.querySelectorAll('.nav a');
+  const navLinks = body.querySelectorAll('nav a');
   const navSvitches = () => {
     if (header.classList.contains('page-header--open')) {
       header.classList.remove('page-header--open');
@@ -21,46 +21,11 @@ body.classList.remove('nojs');
     }
   };
   headerToggle.addEventListener('click', navSvitches);
-  if (window.matchMedia('(max-width: 1024px)').matches) {
-    navLinks.forEach(link => {
-      link.addEventListener('click', navSvitches);
-    });
-  }
+  navLinks.forEach(link => {
+    link.addEventListener('click', navSvitches);
+  });
 })();
-/*
-(() => {
-  const header = body.querySelector('.page-header');
-  const navMain = body.querySelector('.nav');
-  const navToggle = body.querySelector('.nav__toggle');
-  const navLinks = body.querySelectorAll('.nav a');
-  const logo = body.querySelector('.logo');
-  const navSvitches = () => {
-    if (navMain.classList.contains('nav--open')) {
-      navMain.classList.remove('nav--open');
-      navMain.classList.add('nav--close');
-      header.classList.remove('page-header--nav');
-      header.classList.add('page-header--nonav');
-      logo.classList.remove('logo--nav');
-      logo.classList.add('logo--nonav');
-      body.classList.remove('not-available');
-    } else {
-      navMain.classList.add('nav--open');
-      navMain.classList.remove('nav--close');
-      header.classList.add('page-header--nav');
-      header.classList.remove('page-header--nonav');
-      logo.classList.add('logo--nav');
-      logo.classList.remove('logo--nonav');
-      body.classList.add('not-available');
-    }
-  };
-  navToggle.addEventListener('click', navSvitches);
-  if (window.matchMedia('(max-width: 1024px)').matches) {
-    navLinks.forEach(link => {
-      link.addEventListener('click', navSvitches);
-    });
-  }
-})();
-*/
+
 (() => {
   const popupEvents = (popupOpenButtonClassName, popupId) => {
     const popupOpen = document.querySelectorAll(`.${popupOpenButtonClassName}`);

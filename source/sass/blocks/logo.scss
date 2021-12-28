@@ -2,20 +2,33 @@
   cursor: pointer;
 }
 
+.logo a {
+  display: block;
+  margin-top: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
 .logo svg {
+
   fill: $accent-main;
 
-  &:hover {
-    fill: $accent-bg-opacity07;
+  &:hover,
+  &:focus {
+    fill: $accent-bg;
   }
 
   &:active {
-    fill: $accent-bg;
+    fill: $accent-bg-opacity07;
   }
 }
 
 @media (max-width: $medium-width) {
+  .logo a {
+    margin-top: 0;
+  }
   .logo svg {
+    display: block;
     fill: $accent-main;
 
     .page-header--close & {
@@ -31,5 +44,12 @@
     .nojs & {
       fill: $basic-white;
     }
+  }
+}
+
+@media (max-width: $small-width) {
+  .logo svg {
+    width: 52px;
+    height: 52px;
   }
 }

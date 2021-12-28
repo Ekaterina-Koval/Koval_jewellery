@@ -8,7 +8,7 @@ body.classList.remove('nojs');
 
 (() => {
   const headerToggle = body.querySelector('.page-header__toggle');
-  const navLinks = body.querySelectorAll('.nav a');
+  const navLinks = body.querySelectorAll('nav a');
   const navSvitches = () => {
     if (header.classList.contains('page-header--open')) {
       header.classList.remove('page-header--open');
@@ -21,11 +21,9 @@ body.classList.remove('nojs');
     }
   };
   headerToggle.addEventListener('click', navSvitches);
-  if (window.matchMedia('(max-width: 1024px)').matches) {
-    navLinks.forEach(link => {
-      link.addEventListener('click', navSvitches);
-    });
-  }
+  navLinks.forEach(link => {
+    link.addEventListener('click', navSvitches);
+  });
 })();
 
 (() => {

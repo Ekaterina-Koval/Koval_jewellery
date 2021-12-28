@@ -123,7 +123,7 @@
   color: $basic-white;
 
   & h2 {
-    margin: 0 0 20px;
+    margin: 0;
     font-weight: 700;
     font-size: 45px;
     line-height: 1.3em;
@@ -131,11 +131,17 @@
     text-transform: uppercase;
   }
 
-  & P {
+  & p {
     margin: 0;
     font-weight: 400;
     font-size: 38px;
     font-style: italic;
     line-height: 1.3em;
+  }
+
+  @media (max-width: $small-width) {
+    & h2 {
+      font-size: 38px;
+    }
   }
 }

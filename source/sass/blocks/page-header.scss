@@ -28,12 +28,9 @@
 
   @media (max-width: $medium-width) {
     display: block;
-    position: absolute;
-
-    top: 145px;
-    width: 40px;
-    height: 32px;
-    padding: 8px;
+    width: 25px;
+    height: 16px;
+    padding: 0;
     cursor: pointer;
     border: none;
     color: inherit;
@@ -42,14 +39,12 @@
     background-repeat: no-repeat;
     background-size: 25px 16px;
 
-    & svg {
-      &:hover {
-        stroke: $accent-bg-opacity07;
+    &:hover {
+      stroke: $accent-bg-opacity07;
       }
 
-      &:active {
-        stroke: $accent-bg;
-      }
+    &:active {
+      stroke: $accent-bg;
     }
   }
 }
