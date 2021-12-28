@@ -23,6 +23,8 @@ $('.carousel').slick({
     {
       breakpoint: 767,
       settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
         arrows: false,
       }
     }

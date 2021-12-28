@@ -1,15 +1,39 @@
 .novelty {
   @include display-flex-wrap;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 110px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 60px;
+    padding-bottom: 26px;
+  }
 }
 
 .novelty h2 {
   @include section-title;
+  margin: 0 auto 24px;
   text-transform: capitalize;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .novelty__link {
   @include page-link;
+
+  @media (max-width: $medium-width) {
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 40px;
+  }
 }

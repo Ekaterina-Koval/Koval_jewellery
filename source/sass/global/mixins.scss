@@ -18,10 +18,8 @@
 }
 
 @mixin section-title {
-  margin: 0 auto 35px;
-  text-align: center;
-
   @include cormorantgaramond-font;
+  text-align: center;
   font-weight: 700;
   font-size: 34px;
   line-height: 1.3em;
@@ -29,7 +27,6 @@
 
 @mixin page-link {
   margin: 0 auto 60px;
-  padding-bottom: 2px;
   border-bottom: 1px solid $accent-main;
   line-height: 21px;
   color: inherit;

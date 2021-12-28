@@ -1,15 +1,29 @@
 .articles {
   @include display-flex-wrap;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
+
+  @media (max-width: $medium-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .articles h2 {
   @include section-title;
+  margin: 0 0 18px;
 }
 
 .articles__link {
   @include page-link;
+  padding-bottom: 3px;
+
+   @media (max-width: $small-width) {
+     margin-bottom: 52px;
+   }
 }
 
 .articles ul {
@@ -24,6 +38,10 @@
     grid-template-rows: min-content;
     gap: 50px;
   }
+
+  @media (max-width: $small-width) {
+    gap: 40px;
+  }
 }
 
 .articles__item {
@@ -32,7 +50,13 @@
 
   @include display-flex-wrap;
 
+  &--reverse,
+  &:nth-child(2n+2) {
+    flex-direction: row-reverse;
+  }
+
   @media (min-width: $large-width-only) {
+
     &--two-lines {
       grid-column: 2/3;
       grid-row: 1/3;
@@ -74,6 +98,7 @@
 
 .articles__desс {
   width: 50%;
+  min-height: 300px;
   margin: 0 0 0 auto;
   padding: 71px 10px 0;
   box-sizing: border-box;
@@ -81,30 +106,37 @@
   z-index: 1;
 
   @include display-flex-wrap;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
 
   @media (max-width: $small-width) {
     width: 100%;
     min-height: 256px;
+    padding-top: 46px;
   }
 }
 
 .articles time {
-  margin: 0 auto 25px;
+  margin: 0 auto 10px;
   font-size: 14px;
   line-height: 130%;
   color: $basic-content-light;
 }
 
 .articles h3 {
-  width: 70%;
-  margin: 0 auto 50px;
+  margin: 0 auto 36px;
   text-align: center;
+
   @include cormorantgaramond-font;
   font-weight: 600;
   font-size: 26px;
   line-height: 130%;
   color: $basic-black;
+
+  @media (max-width: $medium-width) {
+    width: 53%;
+  }
+
+  @media (max-width: $small-width) {
+    width: 62%;
+  }
 }
