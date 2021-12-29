@@ -1,25 +1,45 @@
 .social ul {
   @include reset-list;
+
+  @media (max-width: $medium-width) {
+    @include display-flex-wrap;
+  }
 }
 
 .social li {
-  @include display-flex-wrap;
-
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+
+    @media (max-width: $medium-width) {
+      margin-bottom: 22px;
+    }
   }
 }
 
 .social a {
+  display: block;
+
   @include display-flex-wrap;
-  vertical-align: middle;
-  line-height: 21px;
+  align-items: center;
+  line-height: 1.3em;
   color: inherit;
   text-decoration: none;
 }
 
 .social svg {
   width: 15px;
-  align-self: center;
   margin-right: 15px;
+}
+
+.social span {
+  vertical-align: bottom;
+  padding-top: 6px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $small-width) {
+    display: none;
+  }
 }

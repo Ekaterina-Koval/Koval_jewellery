@@ -1,23 +1,47 @@
 .follow {
   @include display-flex-wrap;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 130px;
+
+  @media (max-width: $medium-width) {
+      padding-bottom: 80px;
+  }
+
+  @media (max-width: $small-width) {
+      padding-bottom: 70px;
+  }
 }
 
 .follow h2 {
   @include section-title;
+
+  @media (max-width: $medium-width) {
+      margin-bottom: 16px;
+    }
+
+  & span {
+    font-size: 42px;
+    line-height: 1.3em;
+    margin-right: -10px;
+  }
 }
 
 .follow__link {
   @include page-link;
+  padding-bottom: 2px;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .follow ul {
   @include reset-list;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 20% 1fr 1fr 20% 20%;
   grid-template-rows: 230px 150px;
-  gap: 34px 27px;
+  gap: 34px 24px;
 
   @media (max-width: $medium-width) {
     grid-template-rows: 133px 87px;
@@ -33,8 +57,12 @@
 
 .follow__item {
   &--two-lines {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 1/3;
+
+    @media (max-width: $small-width) {
+      grid-column: 2/3;
+    }
   }
 
 

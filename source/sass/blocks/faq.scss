@@ -1,14 +1,114 @@
 .faq {
   @include display-flex-wrap;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 76px;
+
+  @media (max-width: $medium-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .faq h2 {
   @include section-title;
-  margin: 0 0 30px;
+  margin: 0 0 50px;
+  letter-spacing: 0.03em;
+
+    @media (max-width: $small-width) {
+      margin-bottom: 28px;
+    }
 }
 
-.faq h3 {
+.faq__block ul {
+  width: 83%;
+  margin: 0 auto;
+
+  @media (max-width: $medium-width) {
+    width: 100%;
+  }
+}
+
+.faq__block li {
+  padding: 42px;
+
+  @media (max-width: $medium-width) {
+    padding: 42px 42px 44px 50px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 16px 16px 18px 24px;
+  }
+}
+
+.faq__block h3 {
+  @include display-flex-wrap;
+  justify-content: space-between;
+  align-items: top;
+  margin: 0;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3em;
+  letter-spacing: normal;
+
+  @media (max-width: $small-width) {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  & span {
+    max-width: 85%;
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-bg;
+  }
+
+  &:active {
+    color: $accent-bg-opacity07;
+    border: none;
+  }
+}
+
+.faq__block button {
+  height: fit-content;
+  padding: 7px;
+  border: none;
+  background-color: transparent;
+  color: $accent-main;
+}
+
+.faq__block svg {
+  width: 15px;
+  height: 8px;
+
+  @media (max-width: $medium-width) {
+    width: 23px;
+    height: 12px;
+  }
+}
+
+.faq p {
+  width: 60%;
+  margin: 10px 7px 0;
+  box-sizing: border-box;
+  line-height: 1.3em;
+
+  @media (max-width: $medium-width) {
+    width: 95%;
+    margin: 26px 0 0;
+  }
+
+  @media (max-width: $small-width) {
+    width: 82%;
+    margin: 16px 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
 }

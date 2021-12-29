@@ -1,18 +1,46 @@
+.nav-footer nav {
+
+  @media (max-width: $medium-width) {
+    width: 58%;
+    margin-right: 34px;
+  }
+
+  @media (max-width: $small-width) {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
 .nav-footer ul {
   @include reset-list;
   display: grid;
   grid-template-columns: auto 35.7%;
   grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
-  gap: 30px 17.6%;
+  gap: 19px 17.6%;
   overflow-x: auto;
 
   @media (max-width: 1340px) {
-    gap: 30px 5%
+    gap: 30px 5%;
+  }
+
+  @media (max-width: $medium-width) {
+    gap: 18px 5%
+  }
+ @media (max-width: $small-width) {
+   @include display-flex-wrap;
+    width: 100%;
+    min-height: min-content;
   }
 }
 
+.nav-footer li {
+  width: 100%
+}
+
+
 .nav-footer a {
+  vertical-align: bottom;
   line-height: 21px;
   color: inherit;
   text-decoration: none;
