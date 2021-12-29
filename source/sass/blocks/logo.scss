@@ -27,6 +27,7 @@
   .logo a {
     margin-top: 0;
   }
+
   .logo svg {
     display: block;
     fill: $accent-main;
@@ -34,9 +35,7 @@
     .page-header--close & {
       fill: $accent-main;
     }
-  }
 
-  .logo svg {
     .page-header--open & {
       fill: $basic-white;
     }

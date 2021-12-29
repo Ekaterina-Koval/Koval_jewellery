@@ -8,7 +8,7 @@
   border: 1px solid $accent-main;
 
   &:not(:first-child) {
-   border-top: none;
+    border-top: none;
   }
 }
 
@@ -25,22 +25,54 @@
 }
 
 .accordion__toggle {
-   display: block;
+  display: block;
+  width: 100%;
+
+  @include display-flex-wrap;
+  justify-content: space-between;
+  align-items: top;
+  margin: 0;
+  cursor: pointer;
 
   .accordion__svg--down {
     display: block;
   }
+
   .accordion__svg--up {
     display: none;
   }
 
   &--active {
     .accordion__svg--down {
-     display: none;
+      display: none;
     }
 
     .accordion__svg--up {
       display: block;
     }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-bg;
+  }
+
+  &:active {
+    color: $accent-bg-opacity07;
+    border: none;
+  }
+
+
+  & button {
+    height: fit-content;
+    padding: 7px;
+    border: none;
+    background-color: transparent;
+    color: $accent-main;
+  }
+
+  & svg {
+    width: 15px;
+    height: 8px;
   }
 }

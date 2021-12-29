@@ -3,6 +3,7 @@
     width: 82.5%;
     margin-bottom: 48px;
   }
+
   @media (max-width: $small-width) {
     width: 100%;
     margin-bottom: 48px;
@@ -28,6 +29,7 @@
   width: 100%;
   margin: 0;
   padding: 0 0 8px;
+
   @include display-flex-wrap;
   justify-content: space-between;
   border: none;

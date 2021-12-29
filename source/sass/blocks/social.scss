@@ -1,7 +1,7 @@
 .social ul {
   @include reset-list;
 
-  @media (max-width: $medium-width) {
+  @media (max-width: $small-width) {
     @include display-flex-wrap;
   }
 }

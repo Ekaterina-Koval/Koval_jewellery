@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, min(334px));
-  gap: 40px 6.4%;
+  gap: 40px 3.7%;
   grid-auto-rows: 0;  // Удалить,
   overflow-y: hidden; // после удаления последних элементов каталога
 }
@@ -32,15 +32,17 @@
   width: 100%;
   display: block;
   height: 272px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   object-fit: cover;
 }
 
 .products h3 {
-  margin: 0 auto 15px;
+  margin: 0 auto 5px;
   text-align: center;
   font-weight: 500;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 1.3em;
+  letter-spacing: 0.03em;
 }
 
 .products span {

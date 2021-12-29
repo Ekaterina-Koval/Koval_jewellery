@@ -6,51 +6,24 @@
 }
 
 .filters fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
   box-sizing: border-box;
+}
 
-  ul {
-    @include reset-list;
-  }
+.filters__list {
+  @include reset-list;
+  margin-bottom: 32px;
+}
 
-  li {
-    padding-left: 40px;
-  }
+.filters__item {
+  padding: 22px;
 }
 
 .filters legend {
   margin: 0;
   padding: 0;
-}
-
-.filters input {
-  display: none;
-}
-
-.filters input {
-  & + label {
-    position: relative;
-    vertical-align: middle;
-      &::before {
-      position: absolute;
-      content: "";
-      width: 15px;
-      height: 15px;
-      left: -35px;
-      top: 5px;
-      box-sizing: border-box;
-      border: 1px solid $accent-main;
-      background-color: $basic-white;
-    }
-  }
-
-  &:checked + label::before {
-    background-color: $accent-main;
-  }
-}
-
-.filters__price {
-  overflow: hidden;
 }
 
 .filters__open-button {
@@ -61,8 +34,29 @@
   .filters__open-button {
     display: block;
   }
+
   .filters--large-view {
     display: none;
   }
 }
 
+.filters > form > button {
+  width: 100%;
+  min-height: 68px;
+  background-color: transparent;
+  border: 1px solid $accent-main;
+
+  @include poppins-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3em;
+
+  &[type="submit"] {
+    color: $basic-white;
+    background-color: $accent-main;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

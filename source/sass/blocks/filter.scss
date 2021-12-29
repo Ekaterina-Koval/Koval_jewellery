@@ -1,0 +1,39 @@
+.filter ul {
+  @include reset-list;
+  padding: 18px 10px 0;
+}
+
+.filter li {
+  padding-left: 28px;
+  font-size: 14px;
+  line-height: 1.3em;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.filter input {
+  display: none;
+
+  & + label {
+    position: relative;
+    vertical-align: middle;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      left: -26px;
+      top: 5px;
+      box-sizing: border-box;
+      border: 1px solid $accent-main;
+      background-color: $basic-white;
+    }
+  }
+
+  &:checked + label::before {
+    background-color: $accent-main;
+  }
+}

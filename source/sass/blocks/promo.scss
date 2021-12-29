@@ -1,111 +1,226 @@
 .promo {
   width: 100%;
-  min-height: 463px;
-  background-image:
-    linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-    url("../img/main/main-promo_large.jpg");
 
-  @media (min-resolution: 2dppx) {
+  &--main {
+    min-height: 463px;
     background-image:
-      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-      url("../img/main/main-promo_large@2x.jpg");
-  }
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .no-webp & {
-    background-image:
-      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+      linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
       url("../img/main/main-promo_large.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
         url("../img/main/main-promo_large@2x.jpg");
     }
-  }
-
-  .webp & {
-    background-image:
-      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-      url("../img/main/main-promo_large.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-        url("../img/main/main-promo_large@2x.webp");
-    }
-  }
-
-  @media (max-width: $medium-width) {
-    background-image:
-      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-      url("../img/main/main-promo_medium.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-        url("../img/main/main-promo_medium@2x.jpg");
-    }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .no-webp & {
       background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_large.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_large@2x.jpg");
+      }
+    }
+
+    .webp & {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/main/main-promo_large.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_large@2x.webp");
+      }
+    }
+
+    @media (max-width: $medium-width) {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
         url("../img/main/main-promo_medium.jpg");
 
       @media (min-resolution: 2dppx) {
         background-image:
-          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
           url("../img/main/main-promo_medium@2x.jpg");
       }
-    }
 
-    .webp & {
-      background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-        url("../img/main/main-promo_medium.webp");
-
-      @media (min-resolution: 2dppx) {
+      .no-webp & {
         background-image:
-          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-          url("../img/main/main-promo_medium@2x.webp");
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_medium.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/main/main-promo_medium@2x.jpg");
+        }
+      }
+
+      .webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_medium.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/main/main-promo_medium@2x.webp");
+        }
       }
     }
-  }
 
-@media (max-width: $small-width) {
-    background-image:
-      linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-      url("../img/main/main-promo_small.jpg");
-
-    @media (min-resolution: 2dppx) {
+    @media (max-width: $small-width) {
       background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-        url("../img/main/main-promo_small@2x.jpg");
-    }
-
-    .no-webp & {
-      background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
         url("../img/main/main-promo_small.jpg");
 
       @media (min-resolution: 2dppx) {
         background-image:
-          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
           url("../img/main/main-promo_small@2x.jpg");
+      }
+
+      .no-webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_small.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/main/main-promo_small@2x.jpg");
+        }
+      }
+
+      .webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/main/main-promo_small.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/main/main-promo_small@2x.webp");
+        }
+      }
+    }
+  }
+
+  &--catalog {
+    min-height: 261px;
+    background-image:
+      linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+      url("../img/catalog/catalog-promo_large.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/catalog/catalog-promo_large@2x.jpg");
+    }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .no-webp & {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/catalog/catalog-promo_large.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_large@2x.jpg");
       }
     }
 
     .webp & {
       background-image:
-        linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-        url("../img/main/main-promo_small.webp");
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/catalog/catalog-promo_large.webp");
 
       @media (min-resolution: 2dppx) {
         background-image:
-          linear-gradient( $accent-bg-opacity07, $accent-bg-opacity07),
-          url("../img/main/main-promo_small@2x.webp");
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_large@2x.webp");
+      }
+    }
+
+    @media (max-width: $medium-width) {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/catalog/catalog-promo_medium.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_medium@2x.jpg");
+      }
+
+      .no-webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_medium.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/catalog/catalog-promo_medium@2x.jpg");
+        }
+      }
+
+      .webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_medium.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/catalog/catalog-promo_medium@2x.webp");
+        }
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image:
+        linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+        url("../img/catalog/catalog-promo_small.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_small@2x.jpg");
+      }
+
+      .no-webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_small.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/catalog/catalog-promo_small@2x.jpg");
+        }
+      }
+
+      .webp & {
+        background-image:
+          linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+          url("../img/catalog/catalog-promo_small.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient($accent-bg-opacity07, $accent-bg-opacity07),
+            url("../img/catalog/catalog-promo_small@2x.webp");
+        }
       }
     }
   }
@@ -125,16 +240,31 @@
   & h2 {
     margin: 0;
     font-weight: 700;
-    font-size: 45px;
+
+    .promo--main & {
+      font-size: 45px;
+      letter-spacing: 0.03em;
+    }
+
+    .promo--catalog & {
+      font-size: 34px;
+    }
+
     line-height: 1.3em;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
   & p {
     margin: 0;
     font-weight: 400;
-    font-size: 38px;
+
+    .promo--main & {
+      font-size: 38px;
+    }
+
+    .promo--catalog & {
+      font-size: 22px;
+    }
     font-style: italic;
     line-height: 1.3em;
   }

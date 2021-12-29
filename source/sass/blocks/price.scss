@@ -1,3 +1,7 @@
+.price {
+  padding-top: 20px;
+}
+
 .price__wrapper {
   position: relative;
   width: 100%;
@@ -9,7 +13,7 @@
   width: 100%;
   height: 1px;
   top: 8px;
-  background-color: $accent-bg-light;
+  background-color: $popup-accent-bg;
 }
 
 .price__bar {
@@ -30,12 +34,12 @@
   border-radius: 50%;
 
   & span {
-      position: absolute;
-      top: 15px;
-      left: -7px;
-      font-size: 14px;
-      line-height: 130%;
-    }
+    position: absolute;
+    top: 15px;
+    left: -7px;
+    font-size: 14px;
+    line-height: 130%;
+  }
 
   &--min {
     left: 27.5%;

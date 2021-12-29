@@ -1,7 +1,6 @@
-.nav-footer nav {
-
+.nav-footer {
   @media (max-width: $medium-width) {
-    width: 58%;
+    width: 60%;
     margin-right: 34px;
   }
 
@@ -18,26 +17,25 @@
   grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
   gap: 19px 17.6%;
-  overflow-x: auto;
 
   @media (max-width: 1340px) {
     gap: 30px 5%;
   }
 
   @media (max-width: $medium-width) {
-    gap: 18px 5%
+    gap: 18px 5%;
   }
- @media (max-width: $small-width) {
-   @include display-flex-wrap;
+
+  @media (max-width: $small-width) {
+    @include display-flex-wrap;
     width: 100%;
     min-height: min-content;
   }
 }
 
 .nav-footer li {
-  width: 100%
+  width: 100%;
 }
-
 
 .nav-footer a {
   vertical-align: bottom;

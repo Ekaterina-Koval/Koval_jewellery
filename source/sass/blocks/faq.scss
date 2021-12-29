@@ -17,9 +17,9 @@
   margin: 0 0 50px;
   letter-spacing: 0.03em;
 
-    @media (max-width: $small-width) {
-      margin-bottom: 28px;
-    }
+  @media (max-width: $small-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .faq__block ul {
@@ -44,11 +44,6 @@
 }
 
 .faq__block h3 {
-  @include display-flex-wrap;
-  justify-content: space-between;
-  align-items: top;
-  margin: 0;
-  cursor: pointer;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.3em;
@@ -62,16 +57,6 @@
   & span {
     max-width: 85%;
     vertical-align: middle;
-  }
-
-  &:hover,
-  &:focus {
-    color: $accent-bg;
-  }
-
-  &:active {
-    color: $accent-bg-opacity07;
-    border: none;
   }
 }
 

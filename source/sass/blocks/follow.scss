@@ -4,11 +4,11 @@
   padding-bottom: 130px;
 
   @media (max-width: $medium-width) {
-      padding-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $small-width) {
-      padding-bottom: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -16,8 +16,8 @@
   @include section-title;
 
   @media (max-width: $medium-width) {
-      margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
+  }
 
   & span {
     font-size: 42px;

@@ -19,13 +19,19 @@
 </head>
 
 <body class="page__body nojs">
-  <header class="page-header page-header--nonav">
+  <header class="page-header">
     <h1 class="visually-hidden">
       CH jewellery
     </h1>
-    <div class="page-header__header container header">
+    <div class="page-header__header header container ">
+      <button type="button" class="page-header__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
+        </svg>
+      </button>
       <form class="header__search search">
-        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
           <use xlink:href="img/sprite_auto.svg#icon_search"></use>
         </svg>
         <label class="visually-hidden" for="search">
@@ -33,7 +39,7 @@
         </label>
         <input type="search" placeholder="Type here to search" id="search" name="q">
       </form>
-      <div class="header__logo logo logo--nonav">
+      <div class="header__logo logo">
         <a class="logo__link" href="main.html" aria-label="Logotype CH jewellery. Go to main page">
           <svg width="66" height="66" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -41,79 +47,73 @@
         </a>
       </div>
       <div class="header__user user">
-        <a class="user__icon-login" href="login.html" aria-label="Go to log in page">
-          <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
-            <use xlink:href="img/sprite_auto.svg#icon_login"></use>
-          </svg>
-        </a>
-        <ul>
-          <li>
-            <a href="login.html" aria-label="Go to log in page">
-              Login
+        <ul class="user__list">
+          <li class="user__item">
+            <a class="user__popup" href="login.html" aria-label="Go to log in page">
+              <span>
+                Login
+              </span>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Go to cart">
-              Cart <span id="total-cart-count">0</span>
+              <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
+                <use xlink:href="img/sprite_auto.svg#icon_cart"></use>
+              </svg>
+              <span>Cart</span>
+              <span>0</span>
             </a>
         </li></ul>
       </div>
     </div>
-    <nav class="header__nav nav nav--close container">
-      <button type="button" class="nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
-          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
-        </svg>
-      </button>
-      <ul>
+    <nav class="header__nav nav container">
+      <ul class="nav__list nav__list--main">
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section what’s new">
-            What’s new
+          <a class="nav__link" href="#" aria-label="Go to the section what&#8242;s new">
+            What&#8242;s new
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section chokers">
+          <a class="nav__link" href="#" aria-label="Go to the section chokers">
             Chokers
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section necklaces">
+          <a class="nav__link" href="#" aria-label="Go to the section necklaces">
             Necklaces
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#" aria-label="Go to the section rings">
+          <a class="nav__link" href="#" aria-label="Go to the section rings">
             Rings
           </a>
         </li>
         <li>
-          <a class="nav__link" href="main.html#">
+          <a class="nav__link" href="#">
             Earrings
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+      </ul>
+      <ul class="nav__list nav__list--about">
+        <li>
+          <a class="nav__link" href="#">
             About CH
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+        <li>
+          <a class="nav__link" href="#">
             Stores & hours
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
+        <li>
+          <a class="nav__link" href="#">
             Contact us
           </a>
         </li>
-        <li class="nav__item nav__item--more">
-          <a class="nav__link" href="main.html#">
-            About CH
-          </a>
-        </li>
-        <li class="nav__item nav__item--more nav__item--login">
-          <a class="nav__link" href="main.html#">
+      </ul>
+      <ul class="nav__list nav__list--user">
+        <li>
+          <a class="user__popup nav__link" href="login.html" aria-label="Go to log in page">
             Login
           </a>
         </li>
@@ -135,19 +135,16 @@
       <h2 class="visually-hidden">
         Product сatalog
       </h2>
-      <button type="button" class="filters__open-button popup__open-button">
-        <span class="visually-hidden">Открыть меню</span>
-        <svg width="18" height="16" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
-          <use xlink:href="img/sprite_auto.svg#icon_menu-burger"></use>
-        </svg>
+      <button type="button" class="filters__button filters__open-button popup__open-button">
+        <span>Filter</span>
       </button>
       <div class="catalog__filters filters filters--large-view">
         <form class="accordion" method="get" action="https://echo.htmlacademy.ru/">
-          <ul class="accordion__list">
-            <li class="accordion__item">
+          <ul class="filters__list accordion__list">
+            <li class="filters__item filter accordion__item">
               <fieldset>
                 <legend class="filters__toggle accordion__toggle" tabindex="0">
-                  Product
+                  <span>Product</span>
                   <button type="button">
                     <span class="visually-hidden">View filter</span>
                     <svg class="accordion__svg accordion__svg--down" width="23" height="12" viewBox="0 0 23 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
@@ -158,7 +155,8 @@
                     </svg>
                   </button>
                 </legend>
-                <ul class="accordion__content">
+                <div class="accordion__content">
+                <ul class="filter__list">
                   <li>
                     <input type="checkbox" name="necklaces" id="necklaces" checked="">
                     <label for="necklaces">
@@ -184,9 +182,10 @@
                     </label>
                   </li>
                 </ul>
+                </div>
               </fieldset>
             </li>
-            <li class="accordion__item">
+            <li class="filters__item filter accordion__item">
               <fieldset>
                 <legend class="filters__toggle accordion__toggle" tabindex="0">
                   Material
@@ -200,7 +199,8 @@
                     </svg>
                   </button>
                 </legend>
-                <ul class="accordion__content">
+                <div class="accordion__content">
+                <ul class="filter__list">
                   <li>
                     <input type="checkbox" name="gold" id="gold" checked="">
                     <label for="gold">
@@ -214,9 +214,10 @@
                     </label>
                   </li>
                 </ul>
+                </div>
               </fieldset>
             </li>
-            <li class="accordion__item">
+            <li class="filters__item filter accordion__item">
               <fieldset>
                 <legend class="filters__toggle accordion__toggle" tabindex="0">
                   Collection
@@ -230,7 +231,8 @@
                     </svg>
                   </button>
                 </legend>
-                <ul class="accordion__content">
+                <div class="accordion__content">
+                <ul class="filter__list">
                   <li>
                     <input type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
                     <label for="pink-flamingo">
@@ -244,9 +246,10 @@
                     </label>
                   </li>
                 </ul>
+                </div>
               </fieldset>
             </li>
-            <li class="filters__item accordion__item">
+            <li class="filters__item filter accordion__item">
               <fieldset>
                 <legend class="filters__toggle accordion__toggle" tabindex="0">
                   Price
@@ -260,29 +263,29 @@
                     </svg>
                   </button>
                 </legend>
-                <div class="filters__price accordion__content">
+                <div class="filter__price price accordion__content">
                   <div class="price__wrapper">
                     <div class="price__scale ">
                       <div class="price__bar"></div>
                     </div>
-                    <div class="price__toggle price__toggle--min" tabindex="0" aria-label="Toggle max
-                  price">
-                      <span aria-label="Toggle min
-                  price">&#8381;&nbsp;55</span>
+                    <div class="price__toggle price__toggle--min" tabindex="0" aria-label="Toggle max price">
+                      <span>&#8381;&nbsp;55</span>
                     </div>
-                    <div class="price__toggle price__toggle--max" tabindex="0" aria-label="Toggle max
-                  price"><span>&#8381;&nbsp;155</span></div>
+                    <div class="price__toggle price__toggle--max" tabindex="0" aria-label="Toggle max price">
+                      <span>&#8381;&nbsp;155</span>
+                    </div>
                   </div>
                 </div>
               </fieldset>
             </li>
+          </ul>
             <button type="submit">
               Apply
             </button>
             <button type="button">
               Clear all
             </button>
-        </ul></form>
+        </form>
       </div>
       <div class="catalog__products products">
         <ul class="products__list">
@@ -605,7 +608,7 @@
         <div class="products__pagination pagination">
           <h3 class="visually-hidden">Navigation of products from the catalog</h3>
           <button type="button">Previous</button>
-          <ol>
+          <ul>
             <li class="pagination__item pagination__item--current">
               <a class="pagination__link">1</a>
             </li>
@@ -615,7 +618,13 @@
             <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
             </li>
-          </ol>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+          </ul>
           <button type="button">Next</button>
         </div>
       </div>
@@ -631,14 +640,14 @@
               News and updates from CH. No spam, we promise.
             </legend>
             <input type="email" name="email" placeholder="Your E-mail" required="">
-            <button type="submit">
+            <div class="subscription__button">
               <a href="#" aria-label="Go to registration page">
                 Sign up
               </a>
               <svg width="30" height="11" viewBox="0 0 30 11" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor">
                 <use xlink:href="img/sprite_auto.svg#icon_arrow-footer"></use>
               </svg>
-            </button>
+            </div>
           </fieldset>
         </form>
       </section>

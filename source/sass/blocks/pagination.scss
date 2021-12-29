@@ -1,0 +1,10 @@
+.pagination {
+  @include display-flex-wrap;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+.pagination ul {
+  @include reset-list;
+  @include display-flex-wrap;
+}
