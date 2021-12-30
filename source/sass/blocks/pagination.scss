@@ -8,3 +8,60 @@
   @include reset-list;
   @include display-flex-wrap;
 }
+
+.pagination button {
+  width: 70px;
+  padding: 2px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:last-of-type {
+    text-align: right;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-bg;
+    border-bottom: 1px solid $accent-bg;
+  }
+
+  &:active {
+    color: $accent-bg-opacity07;
+    border: none;
+  }
+}
+
+.pagination__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  padding: 2px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: $basic-content-light;
+
+  &--current {
+    color: $basic-content-dark;
+  }
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-bg;
+    border-bottom: 1px solid $accent-bg;
+  }
+
+  &:active {
+    color: $accent-bg-opacity07;
+    border: none;
+  }
+}

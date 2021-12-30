@@ -1,8 +1,19 @@
-.filters,
+.filters {
+  position: relative;
+}
+
+.filters__wrapper,
 .filters form {
   @include display-flex-wrap;
   flex-direction: column;
   width: 100%;
+}
+
+@media (max-width: $medium-width) {
+  .filters__item {
+    border: none;
+    border-bottom: 1px solid $accent-main;
+  }
 }
 
 .filters fieldset {
@@ -19,44 +30,68 @@
 
 .filters__item {
   padding: 22px;
+
+  @media (max-width: $medium-width) {
+    padding: 32px 20px;
+  }
 }
 
 .filters legend {
   margin: 0;
   padding: 0;
+
+  @media (max-width: $medium-width) {
+    font-size: 18px;
+    line-height: 130%;
+  }
 }
 
-.filters__open-button {
+.filters__open-button,
+.filters__close-button {
   display: none;
 }
 
 @media (max-width: $medium-width) {
   .filters__open-button {
     display: block;
+    margin-bottom: 50px;
   }
 
-  .filters--large-view {
+  .filters__wrapper,
+  .filters__wrapper--close {
     display: none;
+  }
+
+  .filters__wrapper--open {
+    position: fixed;
+    top: 27px;
+    left: 0;
+    display: block;
+    width: 425px;
+    min-height: fit-content;
+    background-color: $basic-white;
+
+    @media (max-width: $small-width) {
+      width: 84.3%;
+      top: 76px;
+      left: 25px;
+    }
+  }
+
+  .filters__close-button {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -14px;
+    width: 32px;
+    height: 32px;
+    color: $basic-white;
+    border-radius: 50%;
+    border: 1px solid $basic-content-dark;
+    background-color: $basic-content-dark;
   }
 }
 
-.filters > form > button {
-  width: 100%;
-  min-height: 68px;
-  background-color: transparent;
-  border: 1px solid $accent-main;
-
-  @include poppins-font;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.3em;
-
-  &[type="submit"] {
-    color: $basic-white;
-    background-color: $accent-main;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 25px;
-  }
+.filters__wrapper > form > button[type="submit"] {
+  margin-bottom: 25px;
 }

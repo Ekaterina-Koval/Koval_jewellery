@@ -8,5 +8,6 @@
   @media (max-width: $medium-width) {
     @include display-flex-wrap;
     flex-direction: column;
+    padding-top: 50px;
   }
 }

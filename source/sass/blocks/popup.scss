@@ -3,7 +3,12 @@
   left: 50%;
   top: 50%;
   margin-left: -215px;
-  margin-top: -293px;
+  margin-top: -248px;
   max-height: vh;
   z-index: 3;
+
+  @media (max-width: $small-width) {
+    margin-top: -275px;
+    margin-left: -135px;
+  }
 }
