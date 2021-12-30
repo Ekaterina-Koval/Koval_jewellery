@@ -60,6 +60,8 @@ if (form) {
       body.appendChild(overlay);
       overlay.classList.add('overlay');
       document.body.append(popup);
+      const eMail = popup.querySelector('#e-mail');
+      eMail.focus();
       const popupCloseButton = body.querySelector(`.${popupCloseButtonClassName}`);
       if (body.getElementsByClassName('popup').length > 0) {
         body.classList.add('not-available');
@@ -98,6 +100,7 @@ if (form) {
     };
     popupOpen.forEach((buttonItem) => buttonItem.addEventListener('click', showPopup));
   };
+  popupEvents('user__popup', 'login__close-button', 'login');
   popupEvents('nav__link--login', 'login__close-button', 'login');
 })();
 
