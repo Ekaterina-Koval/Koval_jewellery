@@ -1,7 +1,15 @@
 .header {
+  margin-bottom: 18px;
+
+  @media (min-width: $large-width-only) {
+    border-bottom: 1px solid $section-border;
+  }
+}
+
+.header__wrapper {
   position: relative;
   display: grid;
-  margin-bottom: 18px;
+
   padding-bottom: 8px;
   box-sizing: border-box;
   grid-template-columns: 1fr auto 1fr;
@@ -10,14 +18,12 @@
   align-items: center;
   font-size: 14px;
   line-height: 21px;
-  border-bottom: 1px solid $section-border;
 
   @media (max-width: $medium-width) {
     margin: 0;
     padding-bottom: 0;
     grid-template-rows: min(126px);
     align-content: center;
-    border-bottom: none;
 
     .page-header--close & {
       margin: 0;

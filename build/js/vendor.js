@@ -36,16 +36,15 @@ $('.carousel').slick({
   const accordionToggle = accordion.querySelectorAll('.accordion__toggle');
   accordionToggle.__proto__.forEach = [].__proto__.forEach;
 
-  let activePanel;
   accordionToggle.forEach(function (item) {
     item.addEventListener('click', function () {
-      this.classList.add('accordion__toggle--active');
-      this.nextElementSibling.classList.add('accordion__content--active');
-      if (activePanel) {
+      if (item.classList.contains('accordion__toggle--active')) {
         this.classList.remove('accordion__toggle--active');
         this.nextElementSibling.classList.remove('accordion__content--active');
+      } else {
+          this.classList.add('accordion__toggle--active');
+          this.nextElementSibling.classList.add('accordion__content--active');
       }
-      activePanel = (activePanel === this) ? 0 : this;
     });
   });
 })();

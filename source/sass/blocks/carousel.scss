@@ -1,6 +1,11 @@
 .carousel {
   position: relative;
-  width: 100%;
+
+  @include display-flex-wrap;
+  justify-content: center;
+  min-width: 0;
+  width: 102.5%;
+  margin: 0 -1.75%;
 }
 
 .nojs .carousel__item {
@@ -26,7 +31,7 @@
 }
 
 .carousel__item {
-  margin-bottom: 45px;
+  margin: 0 15px 45px;
 }
 
 .carousel a {
@@ -35,45 +40,35 @@
   text-decoration: none;
 }
 
-
 .carousel img {
   width: 100%;
   display: block;
   height: 284px;
-  padding-right: 30px;
   box-sizing: border-box;
   margin-bottom: 20px;
   object-fit: cover;
 
   @media (max-width: $medium-width) {
     height: 340px;
-    padding-right: 16px;
   }
 
   @media (max-width: $small-width) {
     height: 136px;
-    padding-right: 16px;
   }
 }
 
 .carousel h3 {
   margin: 0 auto 4px;
-  padding-right: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-
-  @media (max-width: $medium-width) {
-    padding-right: 16px;
-  }
 }
 
 .carousel span {
   display: block;
   margin: 0 auto;
   text-align: center;
-  vertical-align: middle;
   font-weight: 700;
   font-size: 14px;
 }

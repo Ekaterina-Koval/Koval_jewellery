@@ -1,10 +1,26 @@
 .pagination {
-  @include display-flex-wrap;
-  justify-content: space-between;
-  padding: 35px 0;
+  border-top: 1px solid $section-border;
+
+  @media (max-width: $small-width) {
+    border: none;
+  }
 }
 
+.pagination__wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 4.2%;
+}
+
+.pagination__list {
+  grid-column: 2/3;
+
+  @include display-flex-wrap;
+  justify-content: space-between;
+  padding-top: 35px;
+}
 .pagination ul {
+
   @include reset-list;
   @include display-flex-wrap;
 }
@@ -28,12 +44,10 @@
   &:hover,
   &:focus {
     color: $accent-bg;
-    border-bottom: 1px solid $accent-bg;
   }
 
   &:active {
     color: $accent-bg-opacity07;
-    border: none;
   }
 }
 
@@ -57,11 +71,9 @@
   &:hover,
   &:focus {
     color: $accent-bg;
-    border-bottom: 1px solid $accent-bg;
   }
 
   &:active {
     color: $accent-bg-opacity07;
-    border: none;
   }
 }

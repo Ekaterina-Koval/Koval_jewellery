@@ -121,3 +121,14 @@ if (form) {
   filtersOpenButton.addEventListener('click', showFilters);
   filtersCloseButton.addEventListener('click', closeFilters);
 })();
+
+(() => {
+  const filtersForm = document.querySelector('.filters__form');
+  const clearFormButton = document.querySelector('.filters__reset');
+
+  if (clearFormButton) {
+    clearFormButton.addEventListener('click', () => {
+      filtersForm.reset();
+    });
+  }
+})();
