@@ -90,6 +90,17 @@
     border: 1px solid $basic-content-dark;
     background-color: $basic-content-dark;
   }
+
+  .nojs {
+    & .filters__open-button,
+    & .filters__close-button {
+      display: none;
+    }
+
+    & .filters__wrapper {
+      display: block;
+    }
+  }
 }
 
 .filters__wrapper > form > button[type="submit"] {

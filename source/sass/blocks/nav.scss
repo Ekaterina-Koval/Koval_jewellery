@@ -48,7 +48,7 @@
     display: none;
   }
 
-  .page-header--open .nav {
+   .nav .page-header--open {
     display: block;
     margin-bottom: 74px;
     width: 100%;
@@ -87,5 +87,12 @@
         margin-bottom: 18px;
       }
     }
+  }
+
+  .nojs .nav {
+    display: block;
+    min-height: min-content;
+    width: 100%;
+    padding: 0 45px;
   }
 }

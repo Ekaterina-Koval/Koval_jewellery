@@ -1,5 +1,10 @@
 .logo {
   cursor: pointer;
+
+  .nojs & {
+    @include display-flex-wrap;
+    justify-content: center;
+  }
 }
 
 .logo a {
