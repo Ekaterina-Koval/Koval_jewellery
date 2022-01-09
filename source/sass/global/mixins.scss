@@ -32,4 +32,13 @@
   color: inherit;
   text-decoration: none;
   text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-bg-light;
+  }
+
+  &:active {
+    background-color: $accent-main;
+  }
 }

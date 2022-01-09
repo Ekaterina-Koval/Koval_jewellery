@@ -1,6 +1,10 @@
 .filter ul {
   @include reset-list;
-  padding: 18px 10px 0;
+  padding: 20px 10px 4px;
+
+  @media (max-width: $medium-width) {
+    padding: 25px 10px 2px;
+  }
 }
 
 .filter li {
@@ -9,7 +13,11 @@
   line-height: 1.3em;
 
   &:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
+
+    @media (max-width: $medium-width) {
+      margin-bottom: 17px;
+    }
   }
 }
 
@@ -19,17 +27,37 @@
   & + label {
     position: relative;
     vertical-align: middle;
+    cursor: pointer;
+
+    @media (max-width: $medium-width) {
+      font-size: 16px;
+      line-height: 1.3em;
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $accent-main;
+    }
+
+    &:active {
+      color: $accent-main;
+    }
 
     &::before {
       position: absolute;
       content: "";
       width: 15px;
       height: 15px;
-      left: -26px;
-      top: 5px;
+      left: -27px;
+      top: 3px;
       box-sizing: border-box;
       border: 1px solid $accent-main;
       background-color: $basic-white;
+
+      @media (max-width: $medium-width) {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 

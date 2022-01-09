@@ -8,13 +8,27 @@
   @include reset-list;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 3.7%;
+  gap: 9px 3.7%;
+
+  @media (max-width: $small-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px 10%;
+  }
 }
 
 .products__item {
   width: 100%;
   margin: 0;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $accent-bg-light;
+  }
+
+  &:active {
+    background-color: $accent-bg-light;
+  }
 }
 
 .products a {
@@ -27,11 +41,16 @@
   width: 100%;
   display: block;
   height: 272px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   object-fit: cover;
 
   @media (max-width: $medium-width) {
     height: 208px;
+  }
+
+  @media (max-width: $small-width) {
+    height: 136px;
+    margin-bottom: 18px;
   }
 }
 
@@ -42,6 +61,10 @@
   font-size: 16px;
   line-height: 1.3em;
   letter-spacing: 0.03em;
+
+  @media (max-width: $small-width) {
+    margin-bottom: 1px;
+  }
 }
 
 .products span {
@@ -49,4 +72,8 @@
   margin: 0 auto;
   text-align: center;
   font-weight: 700;
+
+  @media (max-width: $small-width) {
+    font-size: 14px;
+  }
 }

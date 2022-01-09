@@ -1,41 +1,10 @@
-/* Слайдер */
-.slick-slider  {}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {}
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
-
+  padding: 2px;
 }
-/* Лента слайдов */
+
 .slick-track {
   display: flex;
-}
-/* Слайд */
-.slick-slide {
-
-}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-
-}
-
-/* Слайд основной */
-.slick-slide.slick-current {
-
-}
-
-/* Слайд по центру */
-.slick-slide.slick-center {
-
-}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-
 }
 
 .slick-arrow {
@@ -50,44 +19,60 @@
   background-color: transparent;
   color: transparent;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
   outline: none;
+  cursor: pointer;
+
+  @media (max-width: $medium-width) {
+    width: 36px;
+    height: 15px;
+    top: -98px;
+  }
 
   &.slick-prev {
-    left: 1.3%;
+    left: 1.7%;
     background-image: url("../img/icons/icon_arrow-slider-previous.svg");
+    background-position: left;
   }
 
   &.slick-next {
-    right: 1%;
+    right: 0.6%;
     background-image: url("../img/icons/icon_arrow-slider-next.svg");
+    background-position: right;
   }
 
   &:hover,
   &:focus {
-    background-color: $accent-bg-light;
+    outline: 1px solid $accent-main;
+    outline-offset: 3px;
   }
 
   &:active {
-    border: 1px solid $accent-bg;
+    outline: 2px solid $accent-bg-light;
   }
 }
 
-/* Стрелка не активная */
 .slick-arrow.slick-disabled {
   background-image: none;
 }
-/* Точки (булиты) */
+
 .slick-dots {
   @include reset-list;
   @include display-flex-wrap;
   counter-reset: numli;
 }
 
-.slick-dots li{
+.slick-dots li {
+  @include display-flex-wrap;
+  justify-content: flex-end;
+  min-width: 20px;
+
+  @media (max-width: $medium-width) {
+    min-width: 22px;
+  }
+
   @media (max-width: $small-width) {
     position: relative;
+    min-width: 0;
     margin: 0;
     padding: 0;
     counter-increment: numli;
@@ -98,22 +83,41 @@
       display: block;
       width: max-content;
       right: 0;
-      top: 0;
+      top: -2px;
     }
   }
 }
 
 .slick-dots button {
+  padding: 0;
   background-color: transparent;
   border: none;
-}
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: $basic-content-light;
 
-@media (max-width: $small-width) {
-  .slick-dots button {
-    display: none;
+  &:hover,
+  &:focus {
+    color: $basic-content-dark;
   }
 
-  .slick-dots .slick-active button {
+  &:active {
+    border-bottom: 1px solid $basic-content-light;
+  }
+
+  @media (max-width: $small-width) {
+    display: none;
+  }
+}
+
+.slick-active button {
+  color: $basic-content-dark;
+
+  @media (max-width: $small-width) {
     display: block;
+    padding-right: 42px;
+    font-size: 16px;
+    line-height: 1.3em;
   }
 }

@@ -44,15 +44,21 @@
 
 @media (max-width: $medium-width) {
   .nav,
-  .nav .page-header--close {
+  .page-header--close .nav {
     display: none;
   }
 
-   .nav .page-header--open {
+  .page-header--open .nav {
     display: block;
     margin-bottom: 74px;
+    padding: 0 45px;
+    box-sizing: border-box;
     width: 100%;
     height: fit-content;
+
+    @media (max-width: $small-width) {
+      padding: 0 15px;
+    }
   }
 
   .nav__list {
@@ -94,5 +100,6 @@
     min-height: min-content;
     width: 100%;
     padding: 0 45px;
+    box-sizing: border-box;
   }
 }

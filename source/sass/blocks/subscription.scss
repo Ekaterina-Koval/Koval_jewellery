@@ -6,7 +6,7 @@
 
   @media (max-width: $small-width) {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 }
 
@@ -81,6 +81,15 @@
   background-color: transparent;
   color: $basic-white;
   text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px $basic-white;
+  }
+
+  &:active {
+    outline: 1px solid $basic-white;
+  }
 }
 
 .subscription a {

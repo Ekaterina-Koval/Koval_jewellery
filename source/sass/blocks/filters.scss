@@ -7,6 +7,7 @@
   @include display-flex-wrap;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 @media (max-width: $medium-width) {
@@ -26,13 +27,25 @@
 .filters__list {
   @include reset-list;
   margin-bottom: 32px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $small-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .filters__item {
   padding: 22px;
 
   @media (max-width: $medium-width) {
-    padding: 32px 20px;
+    padding: 34px 40px 34px 20px;
+  }
+
+  @media (max-width: $small-width) {
+    padding: 24px 20px 24px;
   }
 }
 
@@ -42,7 +55,7 @@
 
   @media (max-width: $medium-width) {
     font-size: 18px;
-    line-height: 130%;
+    line-height: 1.3;
   }
 }
 
@@ -55,6 +68,10 @@
   .filters__open-button {
     display: block;
     margin-bottom: 50px;
+
+    @media (max-width: $small-width) {
+      margin-bottom: 40px;
+    }
   }
 
   .filters__wrapper,
@@ -103,6 +120,28 @@
   }
 }
 
-.filters__wrapper > form > button[type="submit"] {
-  margin-bottom: 25px;
+.filters__wrapper > form > button {
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+
+    @media (max-width: $medium-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $medium-width) {
+    width: 85%;
+    margin: 0 auto 0 21px;
+  }
+}
+
+.filters__toggle button {
+  padding: 0;
+}
+
+.filters__toggle svg {
+  @media (max-width: $medium-width) {
+    width: 23px;
+    height: 12px;
+  }
 }

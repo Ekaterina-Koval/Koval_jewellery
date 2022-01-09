@@ -14,4 +14,14 @@
     color: $basic-white;
     background-color: $accent-main;
   }
+
+  &:hover,
+  &:focus {
+    outline: 3px solid $accent-main;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 3px 3px $accent-bg inset;
+  }
 }

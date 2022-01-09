@@ -244,6 +244,10 @@
     .promo--main & {
       font-size: 45px;
       letter-spacing: 0.03em;
+
+      @media (max-width: $small-width) {
+        font-size: 38px;
+      }
     }
 
     .promo--catalog & {
@@ -257,6 +261,7 @@
   & p {
     margin: 0;
     font-weight: 400;
+    text-align: center;
 
     .promo--main & {
       font-size: 38px;

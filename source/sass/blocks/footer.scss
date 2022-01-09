@@ -5,7 +5,7 @@
 
 .footer__wrapper {
   padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 95px;
   display: grid;
   grid-template-columns: 4fr 3fr max-content;
   gap: 7.5%;
@@ -17,5 +17,9 @@
   @media (max-width: $medium-width) {
     @include display-flex-wrap;
     padding-top: 50px;
+  }
+
+  @media (max-width: $small-width) {
+    padding-bottom: 34px;
   }
 }

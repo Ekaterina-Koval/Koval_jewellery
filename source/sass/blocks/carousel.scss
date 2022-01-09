@@ -33,6 +33,23 @@
 
 .carousel__item {
   margin: 0 15px 45px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $accent-bg-light;
+  }
+
+  &:active {
+    background-color: $accent-bg-light;
+  }
 }
 
 .carousel a {

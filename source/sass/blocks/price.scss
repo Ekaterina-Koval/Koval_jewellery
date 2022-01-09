@@ -1,5 +1,14 @@
 .price {
-  padding-top: 20px;
+  padding-top: 18px;
+
+  @media (max-width: $medium-width) {
+    padding: 24px 50px 10px 10px;
+  }
+
+  @media (max-width: $small-width) {
+    margin: 0 -10px;
+    padding: 24px 0 10px;
+  }
 }
 
 .price__wrapper {
@@ -21,8 +30,13 @@
   width: 45%;
   height: 1px;
   top: 0;
-  left: 33%;
+  left: 29.5%;
   background-color: $accent-main;
+
+  @media (max-width: $medium-width) {
+    width: 60%;
+    left: 18%;
+  }
 }
 
 .price__toggle {
@@ -33,19 +47,37 @@
   background-color: $accent-main;
   border-radius: 50%;
 
+  @media (max-width: $medium-width) {
+    width: 18px;
+    height: 18px;
+  }
+
   & span {
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: -7px;
     font-size: 14px;
-    line-height: 130%;
+    line-height: 1.3em;
+
+    @media (max-width: $medium-width) {
+      top: 25px;
+      font-size: 16px;
+    }
   }
 
   &--min {
-    left: 27.5%;
+    left: 23%;
+
+    @media (max-width: $medium-width) {
+      left: 15%;
+    }
   }
 
   &--max {
-    left: 77.5%;
+    left: 74.5%;
+
+    @media (max-width: $medium-width) {
+      left: 72.7%;
+    }
   }
 }

@@ -1,8 +1,7 @@
 .header {
-  margin-bottom: 18px;
-
   @media (min-width: $large-width-only) {
     border-bottom: 1px solid $section-border;
+    margin-bottom: 18px;
   }
 }
 

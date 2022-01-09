@@ -30,9 +30,20 @@
 
   @include display-flex-wrap;
   justify-content: space-between;
-  align-items: top;
+  align-items: center;
   margin: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-bg;
+    background-color: $accent-bg-light;
+  }
+
+  &:active {
+    color: $accent-bg-opacity07;
+    box-shadow: 0 5px 32px $popup-shadow;
+  }
 
   .accordion__svg--down {
     display: block;
@@ -51,17 +62,6 @@
       display: block;
     }
   }
-
-  &:hover,
-  &:focus {
-    color: $accent-bg;
-  }
-
-  &:active {
-    color: $accent-bg-opacity07;
-    border: none;
-  }
-
 
   & button {
     height: fit-content;

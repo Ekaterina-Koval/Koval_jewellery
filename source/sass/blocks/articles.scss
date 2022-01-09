@@ -21,6 +21,15 @@
   @include page-link;
   padding-bottom: 3px;
 
+  &:hover,
+  &:focus {
+    color: $accent-main;
+  }
+
+  &:active {
+    background-color: $accent-main;
+  }
+
   @media (max-width: $small-width) {
     margin-bottom: 52px;
   }

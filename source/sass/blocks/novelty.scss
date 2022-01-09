@@ -2,16 +2,16 @@
   @include display-flex-wrap;
   flex-direction: column;
   padding-top: 120px;
-  padding-bottom: 110px;
+  padding-bottom: 116px;
 
   @media (max-width: $medium-width) {
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 66px;
   }
 
   @media (max-width: $small-width) {
     padding-top: 60px;
-    padding-bottom: 26px;
+    padding-bottom: 56px;
   }
 }
 
