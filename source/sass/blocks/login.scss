@@ -191,15 +191,15 @@
   display: block;
   width: fit-content;
   margin: 0 0 0 auto;
+}
 
-  & a {
-    @include poppins-font;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: $basic-content-light;
-    text-decoration: none;
-  }
+.login__label-link {
+  @include poppins-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $basic-content-light;
+  text-decoration: none;
 }
 
 .login button[type="submit"] {

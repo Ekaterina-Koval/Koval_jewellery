@@ -18,13 +18,14 @@
   @media (max-width: $medium-width) {
     margin-bottom: 16px;
   }
-
-  & span {
-    font-size: 42px;
-    line-height: 1.3em;
-    margin-right: -10px;
-  }
 }
+
+.follow__title-element {
+  font-size: 42px;
+  line-height: 1.3em;
+  margin-right: -10px;
+}
+
 
 .follow__link {
   @include page-link;
