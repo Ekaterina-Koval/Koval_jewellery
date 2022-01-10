@@ -28,6 +28,17 @@
   }
 }
 
+.logo--main a {
+  cursor: initial;
+}
+
+.logo--main svg,
+.logo--main svg:hover,
+.logo--main svg:focus,
+.logo--main svg:active {
+  fill: $accent-main;
+}
+
 @media (max-width: $medium-width) {
   .logo a {
     margin-top: 0;

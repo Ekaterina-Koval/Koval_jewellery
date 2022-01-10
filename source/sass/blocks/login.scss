@@ -185,6 +185,11 @@
     line-height: 21px;
     color: $basic-content-light;
   }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $basic-content-dark;
+  }
 }
 
 .login label {
@@ -200,6 +205,15 @@
   line-height: 18px;
   color: $basic-content-light;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-content-dark;
+  }
+
+  &:active {
+    box-shadow: 0 3px 3px $basic-content-light inset;
+  }
 }
 
 .login button[type="submit"] {
@@ -228,4 +242,13 @@
   line-height: 21px;
   color: $basic-content-light;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-content-dark;
+  }
+
+  &:active {
+    box-shadow: 0 3px 3px $basic-content-light inset;
+  }
 }
