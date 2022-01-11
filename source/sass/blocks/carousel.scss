@@ -61,18 +61,10 @@
 .carousel img {
   width: 100%;
   display: block;
-  height: 284px;
+  height: auto;
   box-sizing: border-box;
   margin-bottom: 20px;
   object-fit: cover;
-
-  @media (max-width: $medium-width) {
-    height: 340px;
-  }
-
-  @media (max-width: $small-width) {
-    height: 136px;
-  }
 }
 
 .carousel h3 {
