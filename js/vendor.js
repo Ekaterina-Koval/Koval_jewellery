@@ -33,18 +33,20 @@ $('.carousel').slick({
 
 (() => {
   const accordion = document.querySelector('.accordion');
-  const accordionToggle = accordion.querySelectorAll('.accordion__toggle');
-  accordionToggle.__proto__.forEach = [].__proto__.forEach;
+  if (accordion) {
+    const accordionToggle = accordion.querySelectorAll('.accordion__toggle');
+    accordionToggle.__proto__.forEach = [].__proto__.forEach;
 
-  accordionToggle.forEach(function (item) {
-    item.addEventListener('click', function () {
-      if (item.classList.contains('accordion__toggle--active')) {
-        this.classList.remove('accordion__toggle--active');
-        this.nextElementSibling.classList.remove('accordion__content--active');
-      } else {
-          this.classList.add('accordion__toggle--active');
-          this.nextElementSibling.classList.add('accordion__content--active');
-      }
+    accordionToggle.forEach(function (item) {
+      item.addEventListener('click', function () {
+        if (item.classList.contains('accordion__toggle--active')) {
+          this.classList.remove('accordion__toggle--active');
+          this.nextElementSibling.classList.remove('accordion__content--active');
+        } else {
+            this.classList.add('accordion__toggle--active');
+            this.nextElementSibling.classList.add('accordion__content--active');
+        }
+      });
     });
-  });
+  }
 })();
