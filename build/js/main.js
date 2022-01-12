@@ -1,7 +1,7 @@
 'use strict';
 
 const body = document.querySelector('.page__body');
-const header = body.querySelector('.page-header');
+
 const form = body.querySelector('.subscription__form');
 const email = document.querySelector('#email');
 
@@ -30,23 +30,26 @@ if (form) {
 }
 
 (() => {
-  const headerToggle = body.querySelector('.page-header__toggle');
-  const navLinks = body.querySelectorAll('nav a');
-  const navSvitches = () => {
-    if (header.classList.contains('page-header--open')) {
-      header.classList.remove('page-header--open');
-      header.classList.add('page-header--close');
-      body.classList.remove('not-available');
-    } else {
-      header.classList.add('page-header--open');
-      header.classList.remove('page-header--close');
-      body.classList.add('not-available');
-    }
-  };
-  headerToggle.addEventListener('click', navSvitches);
-  navLinks.forEach(link => {
-    link.addEventListener('click', navSvitches);
-  });
+  const header = body.querySelector('.page-header');
+  if (header) {
+    const headerToggle = body.querySelector('.page-header__toggle');
+    const navLinks = body.querySelectorAll('nav a');
+    const navSvitches = () => {
+      if (header.classList.contains('page-header--open')) {
+        header.classList.remove('page-header--open');
+        header.classList.add('page-header--close');
+        body.classList.remove('not-available');
+      } else {
+        header.classList.add('page-header--open');
+        header.classList.remove('page-header--close');
+        body.classList.add('not-available');
+      }
+    };
+    headerToggle.addEventListener('click', navSvitches);
+    navLinks.forEach(link => {
+      link.addEventListener('click', navSvitches);
+    });
+  }
 })();
 
 (() => {
@@ -106,20 +109,22 @@ if (form) {
 
 (() => {
   const filtersOpenButton = document.querySelector('.filters__open-button');
-  const filtersCloseButton = document.querySelector('.filters__close-button');
-  const filters = document.querySelector('.filters__wrapper');
-  const showFilters = (evt) => {
-    evt.preventDefault();
-    filters.classList.add('filters__wrapper--open');
-    filters.classList.remove('filters__wrapper--close');
-  };
-  const closeFilters = (evt) => {
-    evt.preventDefault();
-    filters.classList.add('filters__wrapper--close');
-    filters.classList.remove('filters__wrapper--open');
-  };
-  filtersOpenButton.addEventListener('click', showFilters);
-  filtersCloseButton.addEventListener('click', closeFilters);
+  if (filtersOpenButton) {
+    const filtersCloseButton = document.querySelector('.filters__close-button');
+    const filters = document.querySelector('.filters__wrapper');
+    const showFilters = (evt) => {
+      evt.preventDefault();
+      filters.classList.add('filters__wrapper--open');
+      filters.classList.remove('filters__wrapper--close');
+    };
+    const closeFilters = (evt) => {
+      evt.preventDefault();
+      filters.classList.add('filters__wrapper--close');
+      filters.classList.remove('filters__wrapper--open');
+    };
+    filtersOpenButton.addEventListener('click', showFilters);
+    filtersCloseButton.addEventListener('click', closeFilters);
+  }
 })();
 
 (() => {
